@@ -14,6 +14,7 @@
 		3746FF4B245E2C2E009FD832 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3746FF4A245E2C2E009FD832 /* Assets.xcassets */; };
 		3746FF4E245E2C2E009FD832 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3746FF4D245E2C2E009FD832 /* Preview Assets.xcassets */; };
 		3746FF51245E2C2E009FD832 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3746FF4F245E2C2E009FD832 /* LaunchScreen.storyboard */; };
+		3746FF5B245E33A8009FD832 /* BrewDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746FF5A245E33A8009FD832 /* BrewDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3746FF4D245E2C2E009FD832 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3746FF50245E2C2E009FD832 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3746FF52245E2C2E009FD832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3746FF5A245E33A8009FD832 /* BrewDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		3746FF40245E2C2D009FD832 /* coffe-timer */ = {
 			isa = PBXGroup;
 			children = (
+				3746FF58245E3378009FD832 /* views */,
 				3746FF41245E2C2D009FD832 /* AppDelegate.swift */,
 				3746FF43245E2C2D009FD832 /* SceneDelegate.swift */,
 				3746FF48245E2C2D009FD832 /* ContentView.swift */,
@@ -76,6 +79,22 @@
 				3746FF4D245E2C2E009FD832 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3746FF58245E3378009FD832 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				3746FF59245E338C009FD832 /* brew details */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		3746FF59245E338C009FD832 /* brew details */ = {
+			isa = PBXGroup;
+			children = (
+				3746FF5A245E33A8009FD832 /* BrewDetails.swift */,
+			);
+			path = "brew details";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +170,7 @@
 			files = (
 				3746FF42245E2C2D009FD832 /* AppDelegate.swift in Sources */,
 				3746FF47245E2C2D009FD832 /* coffe_timer.xcdatamodeld in Sources */,
+				3746FF5B245E33A8009FD832 /* BrewDetails.swift in Sources */,
 				3746FF49245E2C2D009FD832 /* ContentView.swift in Sources */,
 				3746FF44245E2C2D009FD832 /* SceneDelegate.swift in Sources */,
 			);
