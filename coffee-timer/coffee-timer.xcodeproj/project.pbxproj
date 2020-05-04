@@ -7,31 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3746FF42245E2C2D009FD832 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746FF41245E2C2D009FD832 /* AppDelegate.swift */; };
-		3746FF44245E2C2D009FD832 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746FF43245E2C2D009FD832 /* SceneDelegate.swift */; };
-		3746FF47245E2C2D009FD832 /* coffe_timer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3746FF45245E2C2D009FD832 /* coffe_timer.xcdatamodeld */; };
-		3746FF49245E2C2D009FD832 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746FF48245E2C2D009FD832 /* ContentView.swift */; };
-		3746FF4B245E2C2E009FD832 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3746FF4A245E2C2E009FD832 /* Assets.xcassets */; };
-		3746FF4E245E2C2E009FD832 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3746FF4D245E2C2E009FD832 /* Preview Assets.xcassets */; };
-		3746FF51245E2C2E009FD832 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3746FF4F245E2C2E009FD832 /* LaunchScreen.storyboard */; };
-		3746FF5B245E33A8009FD832 /* BrewDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746FF5A245E33A8009FD832 /* BrewDetails.swift */; };
+		37A0B9672460DE8800CE3E86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0B9662460DE8800CE3E86 /* AppDelegate.swift */; };
+		37A0B9692460DE8800CE3E86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0B9682460DE8800CE3E86 /* SceneDelegate.swift */; };
+		37A0B96C2460DE8800CE3E86 /* coffee_timer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37A0B96A2460DE8800CE3E86 /* coffee_timer.xcdatamodeld */; };
+		37A0B96E2460DE8800CE3E86 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0B96D2460DE8800CE3E86 /* ContentView.swift */; };
+		37A0B9702460DE9000CE3E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37A0B96F2460DE9000CE3E86 /* Assets.xcassets */; };
+		37A0B9732460DE9000CE3E86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37A0B9722460DE9000CE3E86 /* Preview Assets.xcassets */; };
+		37A0B9762460DE9000CE3E86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A0B9742460DE9000CE3E86 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3746FF3E245E2C2D009FD832 /* coffe-timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coffe-timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3746FF41245E2C2D009FD832 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3746FF43245E2C2D009FD832 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3746FF46245E2C2D009FD832 /* coffe_timer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = coffe_timer.xcdatamodel; sourceTree = "<group>"; };
-		3746FF48245E2C2D009FD832 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		3746FF4A245E2C2E009FD832 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3746FF4D245E2C2E009FD832 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3746FF50245E2C2E009FD832 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3746FF52245E2C2E009FD832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3746FF5A245E33A8009FD832 /* BrewDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewDetails.swift; sourceTree = "<group>"; };
+		37A0B9632460DE8800CE3E86 /* coffee-timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coffee-timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37A0B9662460DE8800CE3E86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		37A0B9682460DE8800CE3E86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		37A0B96B2460DE8800CE3E86 /* coffee_timer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = coffee_timer.xcdatamodel; sourceTree = "<group>"; };
+		37A0B96D2460DE8800CE3E86 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		37A0B96F2460DE9000CE3E86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37A0B9722460DE9000CE3E86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		37A0B9752460DE9000CE3E86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		37A0B9772460DE9000CE3E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3746FF3B245E2C2D009FD832 /* Frameworks */ = {
+		37A0B9602460DE8800CE3E86 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,98 +39,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3746FF35245E2C2D009FD832 = {
+		37A0B95A2460DE8700CE3E86 = {
 			isa = PBXGroup;
 			children = (
-				3746FF40245E2C2D009FD832 /* coffe-timer */,
-				3746FF3F245E2C2D009FD832 /* Products */,
+				37A0B9652460DE8800CE3E86 /* coffee-timer */,
+				37A0B9642460DE8800CE3E86 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3746FF3F245E2C2D009FD832 /* Products */ = {
+		37A0B9642460DE8800CE3E86 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3746FF3E245E2C2D009FD832 /* coffe-timer.app */,
+				37A0B9632460DE8800CE3E86 /* coffee-timer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3746FF40245E2C2D009FD832 /* coffe-timer */ = {
+		37A0B9652460DE8800CE3E86 /* coffee-timer */ = {
 			isa = PBXGroup;
 			children = (
-				3746FF58245E3378009FD832 /* views */,
-				3746FF41245E2C2D009FD832 /* AppDelegate.swift */,
-				3746FF43245E2C2D009FD832 /* SceneDelegate.swift */,
-				3746FF48245E2C2D009FD832 /* ContentView.swift */,
-				3746FF4A245E2C2E009FD832 /* Assets.xcassets */,
-				3746FF4F245E2C2E009FD832 /* LaunchScreen.storyboard */,
-				3746FF52245E2C2E009FD832 /* Info.plist */,
-				3746FF45245E2C2D009FD832 /* coffe_timer.xcdatamodeld */,
-				3746FF4C245E2C2E009FD832 /* Preview Content */,
+				37A0B9662460DE8800CE3E86 /* AppDelegate.swift */,
+				37A0B9682460DE8800CE3E86 /* SceneDelegate.swift */,
+				37A0B96D2460DE8800CE3E86 /* ContentView.swift */,
+				37A0B96F2460DE9000CE3E86 /* Assets.xcassets */,
+				37A0B9742460DE9000CE3E86 /* LaunchScreen.storyboard */,
+				37A0B9772460DE9000CE3E86 /* Info.plist */,
+				37A0B96A2460DE8800CE3E86 /* coffee_timer.xcdatamodeld */,
+				37A0B9712460DE9000CE3E86 /* Preview Content */,
 			);
-			path = "coffe-timer";
+			path = "coffee-timer";
 			sourceTree = "<group>";
 		};
-		3746FF4C245E2C2E009FD832 /* Preview Content */ = {
+		37A0B9712460DE9000CE3E86 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				3746FF4D245E2C2E009FD832 /* Preview Assets.xcassets */,
+				37A0B9722460DE9000CE3E86 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		3746FF58245E3378009FD832 /* views */ = {
-			isa = PBXGroup;
-			children = (
-				3746FF59245E338C009FD832 /* brew details */,
-			);
-			path = views;
-			sourceTree = "<group>";
-		};
-		3746FF59245E338C009FD832 /* brew details */ = {
-			isa = PBXGroup;
-			children = (
-				3746FF5A245E33A8009FD832 /* BrewDetails.swift */,
-			);
-			path = "brew details";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3746FF3D245E2C2D009FD832 /* coffe-timer */ = {
+		37A0B9622460DE8800CE3E86 /* coffee-timer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3746FF55245E2C2E009FD832 /* Build configuration list for PBXNativeTarget "coffe-timer" */;
+			buildConfigurationList = 37A0B97A2460DE9000CE3E86 /* Build configuration list for PBXNativeTarget "coffee-timer" */;
 			buildPhases = (
-				3746FF3A245E2C2D009FD832 /* Sources */,
-				3746FF3B245E2C2D009FD832 /* Frameworks */,
-				3746FF3C245E2C2D009FD832 /* Resources */,
+				37A0B95F2460DE8800CE3E86 /* Sources */,
+				37A0B9602460DE8800CE3E86 /* Frameworks */,
+				37A0B9612460DE8800CE3E86 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "coffe-timer";
-			productName = "coffe-timer";
-			productReference = 3746FF3E245E2C2D009FD832 /* coffe-timer.app */;
+			name = "coffee-timer";
+			productName = "coffee-timer";
+			productReference = 37A0B9632460DE8800CE3E86 /* coffee-timer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3746FF36245E2C2D009FD832 /* Project object */ = {
+		37A0B95B2460DE8700CE3E86 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Maegan Wilson";
 				TargetAttributes = {
-					3746FF3D245E2C2D009FD832 = {
+					37A0B9622460DE8800CE3E86 = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
 				};
 			};
-			buildConfigurationList = 3746FF39245E2C2D009FD832 /* Build configuration list for PBXProject "coffe-timer" */;
+			buildConfigurationList = 37A0B95E2460DE8700CE3E86 /* Build configuration list for PBXProject "coffee-timer" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -140,49 +121,48 @@
 				en,
 				Base,
 			);
-			mainGroup = 3746FF35245E2C2D009FD832;
-			productRefGroup = 3746FF3F245E2C2D009FD832 /* Products */;
+			mainGroup = 37A0B95A2460DE8700CE3E86;
+			productRefGroup = 37A0B9642460DE8800CE3E86 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3746FF3D245E2C2D009FD832 /* coffe-timer */,
+				37A0B9622460DE8800CE3E86 /* coffee-timer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3746FF3C245E2C2D009FD832 /* Resources */ = {
+		37A0B9612460DE8800CE3E86 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3746FF51245E2C2E009FD832 /* LaunchScreen.storyboard in Resources */,
-				3746FF4E245E2C2E009FD832 /* Preview Assets.xcassets in Resources */,
-				3746FF4B245E2C2E009FD832 /* Assets.xcassets in Resources */,
+				37A0B9762460DE9000CE3E86 /* LaunchScreen.storyboard in Resources */,
+				37A0B9732460DE9000CE3E86 /* Preview Assets.xcassets in Resources */,
+				37A0B9702460DE9000CE3E86 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3746FF3A245E2C2D009FD832 /* Sources */ = {
+		37A0B95F2460DE8800CE3E86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3746FF42245E2C2D009FD832 /* AppDelegate.swift in Sources */,
-				3746FF47245E2C2D009FD832 /* coffe_timer.xcdatamodeld in Sources */,
-				3746FF5B245E33A8009FD832 /* BrewDetails.swift in Sources */,
-				3746FF49245E2C2D009FD832 /* ContentView.swift in Sources */,
-				3746FF44245E2C2D009FD832 /* SceneDelegate.swift in Sources */,
+				37A0B9672460DE8800CE3E86 /* AppDelegate.swift in Sources */,
+				37A0B96C2460DE8800CE3E86 /* coffee_timer.xcdatamodeld in Sources */,
+				37A0B96E2460DE8800CE3E86 /* ContentView.swift in Sources */,
+				37A0B9692460DE8800CE3E86 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3746FF4F245E2C2E009FD832 /* LaunchScreen.storyboard */ = {
+		37A0B9742460DE9000CE3E86 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3746FF50245E2C2E009FD832 /* Base */,
+				37A0B9752460DE9000CE3E86 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -190,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3746FF53245E2C2E009FD832 /* Debug */ = {
+		37A0B9782460DE9000CE3E86 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -250,7 +230,7 @@
 			};
 			name = Debug;
 		};
-		3746FF54245E2C2E009FD832 /* Release */ = {
+		37A0B9792460DE9000CE3E86 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -304,40 +284,40 @@
 			};
 			name = Release;
 		};
-		3746FF56245E2C2E009FD832 /* Debug */ = {
+		37A0B97B2460DE9000CE3E86 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"coffe-timer/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"coffee-timer/Preview Content\"";
 				DEVELOPMENT_TEAM = ZDK82FGR3Z;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "coffe-timer/Info.plist";
+				INFOPLIST_FILE = "coffee-timer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.appsbymw.coffe-timer";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appsbymw.coffee-timer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		3746FF57245E2C2E009FD832 /* Release */ = {
+		37A0B97C2460DE9000CE3E86 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"coffe-timer/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"coffee-timer/Preview Content\"";
 				DEVELOPMENT_TEAM = ZDK82FGR3Z;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "coffe-timer/Info.plist";
+				INFOPLIST_FILE = "coffee-timer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.appsbymw.coffe-timer";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appsbymw.coffee-timer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -347,20 +327,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3746FF39245E2C2D009FD832 /* Build configuration list for PBXProject "coffe-timer" */ = {
+		37A0B95E2460DE8700CE3E86 /* Build configuration list for PBXProject "coffee-timer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3746FF53245E2C2E009FD832 /* Debug */,
-				3746FF54245E2C2E009FD832 /* Release */,
+				37A0B9782460DE9000CE3E86 /* Debug */,
+				37A0B9792460DE9000CE3E86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3746FF55245E2C2E009FD832 /* Build configuration list for PBXNativeTarget "coffe-timer" */ = {
+		37A0B97A2460DE9000CE3E86 /* Build configuration list for PBXNativeTarget "coffee-timer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3746FF56245E2C2E009FD832 /* Debug */,
-				3746FF57245E2C2E009FD832 /* Release */,
+				37A0B97B2460DE9000CE3E86 /* Debug */,
+				37A0B97C2460DE9000CE3E86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -368,17 +348,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		3746FF45245E2C2D009FD832 /* coffe_timer.xcdatamodeld */ = {
+		37A0B96A2460DE8800CE3E86 /* coffee_timer.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				3746FF46245E2C2D009FD832 /* coffe_timer.xcdatamodel */,
+				37A0B96B2460DE8800CE3E86 /* coffee_timer.xcdatamodel */,
 			);
-			currentVersion = 3746FF46245E2C2D009FD832 /* coffe_timer.xcdatamodel */;
-			path = coffe_timer.xcdatamodeld;
+			currentVersion = 37A0B96B2460DE8800CE3E86 /* coffee_timer.xcdatamodel */;
+			path = coffee_timer.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 3746FF36245E2C2D009FD832 /* Project object */;
+	rootObject = 37A0B95B2460DE8700CE3E86 /* Project object */;
 }

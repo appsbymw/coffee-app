@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  coffe-timer
+//  coffee-timer
 //
-//  Created by Maegan Wilson on 5/2/20.
+//  Created by Maegan Wilson on 5/4/20.
 //  Copyright © 2020 Maegan Wilson. All rights reserved.
 //
 
