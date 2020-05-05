@@ -14,6 +14,12 @@
 		37A0B9702460DE9000CE3E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37A0B96F2460DE9000CE3E86 /* Assets.xcassets */; };
 		37A0B9732460DE9000CE3E86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37A0B9722460DE9000CE3E86 /* Preview Assets.xcassets */; };
 		37A0B9762460DE9000CE3E86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37A0B9742460DE9000CE3E86 /* LaunchScreen.storyboard */; };
+		37A0B9802460E02700CE3E86 /* CalcMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0B97F2460E02700CE3E86 /* CalcMain.swift */; };
+		37A0B9822460E07A00CE3E86 /* TitleBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0B9812460E07A00CE3E86 /* TitleBlock.swift */; };
+		37A0B9842460E2EC00CE3E86 /* CoffeeAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0B9832460E2EC00CE3E86 /* CoffeeAmount.swift */; };
+		37A0B9862460E4F300CE3E86 /* WaterAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0B9852460E4F300CE3E86 /* WaterAmount.swift */; };
+		37A0B9882460E5A800CE3E86 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0B9872460E5A800CE3E86 /* Timer.swift */; };
+		37A0B98C2460E8F800CE3E86 /* Blooming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0B98B2460E8F800CE3E86 /* Blooming.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		37A0B9722460DE9000CE3E86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		37A0B9752460DE9000CE3E86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37A0B9772460DE9000CE3E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37A0B97F2460E02700CE3E86 /* CalcMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcMain.swift; sourceTree = "<group>"; };
+		37A0B9812460E07A00CE3E86 /* TitleBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleBlock.swift; sourceTree = "<group>"; };
+		37A0B9832460E2EC00CE3E86 /* CoffeeAmount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeAmount.swift; sourceTree = "<group>"; };
+		37A0B9852460E4F300CE3E86 /* WaterAmount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterAmount.swift; sourceTree = "<group>"; };
+		37A0B9872460E5A800CE3E86 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		37A0B98B2460E8F800CE3E86 /* Blooming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blooming.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 		37A0B9652460DE8800CE3E86 /* coffee-timer */ = {
 			isa = PBXGroup;
 			children = (
+				37A0B97D2460DFCA00CE3E86 /* views */,
 				37A0B9662460DE8800CE3E86 /* AppDelegate.swift */,
 				37A0B9682460DE8800CE3E86 /* SceneDelegate.swift */,
 				37A0B96D2460DE8800CE3E86 /* ContentView.swift */,
@@ -76,6 +89,27 @@
 				37A0B9722460DE9000CE3E86 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		37A0B97D2460DFCA00CE3E86 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				37A0B97E2460DFD400CE3E86 /* calculation-view */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		37A0B97E2460DFD400CE3E86 /* calculation-view */ = {
+			isa = PBXGroup;
+			children = (
+				37A0B97F2460E02700CE3E86 /* CalcMain.swift */,
+				37A0B9812460E07A00CE3E86 /* TitleBlock.swift */,
+				37A0B9832460E2EC00CE3E86 /* CoffeeAmount.swift */,
+				37A0B9852460E4F300CE3E86 /* WaterAmount.swift */,
+				37A0B9872460E5A800CE3E86 /* Timer.swift */,
+				37A0B98B2460E8F800CE3E86 /* Blooming.swift */,
+			);
+			path = "calculation-view";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +183,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37A0B9822460E07A00CE3E86 /* TitleBlock.swift in Sources */,
 				37A0B9672460DE8800CE3E86 /* AppDelegate.swift in Sources */,
+				37A0B9802460E02700CE3E86 /* CalcMain.swift in Sources */,
+				37A0B9862460E4F300CE3E86 /* WaterAmount.swift in Sources */,
+				37A0B9842460E2EC00CE3E86 /* CoffeeAmount.swift in Sources */,
 				37A0B96C2460DE8800CE3E86 /* coffee_timer.xcdatamodeld in Sources */,
+				37A0B98C2460E8F800CE3E86 /* Blooming.swift in Sources */,
+				37A0B9882460E5A800CE3E86 /* Timer.swift in Sources */,
 				37A0B96E2460DE8800CE3E86 /* ContentView.swift in Sources */,
 				37A0B9692460DE8800CE3E86 /* SceneDelegate.swift in Sources */,
 			);
