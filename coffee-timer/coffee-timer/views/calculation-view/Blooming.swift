@@ -9,12 +9,15 @@
 import SwiftUI
 
 struct Blooming: View {
+    var coffeeAmount: Double
+    var blooming = 2.0 // User defaults at somepoint
+    
     var body: some View {
       VStack{
         HStack{
           Text("Water for Bloom")
           Spacer()
-          Text("120 g")
+          Text("\(coffeeAmount * blooming) g")
             .foregroundColor(.blue)
         }
         HStack{
@@ -29,6 +32,6 @@ struct Blooming: View {
 
 struct Blooming_Previews: PreviewProvider {
     static var previews: some View {
-        Blooming()
+        Blooming(coffeeAmount: 60.0)
     }
 }

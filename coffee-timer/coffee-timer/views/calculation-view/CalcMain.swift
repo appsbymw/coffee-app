@@ -9,19 +9,30 @@
 import SwiftUI
 
 struct CalcMain: View {
+    @State private var isCoffeeAmountEditable = false
+    @State var coffeeAmount: Double = 60.0
+    
     var body: some View {
       VStack {
         TitleBlock()
         Divider()
-        CoffeeAmount()
-        WaterAmount()
+        Button(action:{
+            self.isCoffeeAmountEditable.toggle()
+        }){
+            CoffeeAmount(coffeeAmount: coffeeAmount)
+                .padding(.vertical)
+        }
+        WaterAmount(coffeeAmount: coffeeAmount)
         Divider()
-        Blooming()
+        Blooming(coffeeAmount: coffeeAmount)
         Divider()
         Timer()
           .padding(.top)
       }
       .padding(.horizontal)
+      .sheet(isPresented: $isCoffeeAmountEditable) {
+        CoffeeAdjust(coffeeAmount: self.$coffeeAmount)
+        }
     }
 }
 

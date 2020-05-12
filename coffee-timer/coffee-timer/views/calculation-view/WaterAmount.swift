@@ -9,19 +9,22 @@
 import SwiftUI
 
 struct WaterAmount: View {
-  
-  var body: some View {
-    HStack{
-      Text("Water Amount")
-      Spacer()
-      Text("960 g")
-        .foregroundColor(.blue)
+    
+    var coffeeAmount: Double
+    var ratio = 16.0 //User Defaults
+    
+    var body: some View {
+        HStack{
+            Text("Water Amount")
+            Spacer()
+            Text("\(coffeeAmount * ratio) g")
+                .foregroundColor(.blue)
+        }
     }
-  }
 }
 
 struct WaterAmount_Previews: PreviewProvider {
-  static var previews: some View {
-    WaterAmount()
-  }
+    static var previews: some View {
+        WaterAmount(coffeeAmount: 60.0)
+    }
 }
