@@ -1,4 +1,4 @@
 - name: Home
   link: /
-# - name: Release Notes
-#   link: /release-notes
+- name: Release Notes
+  link: /release-notes
