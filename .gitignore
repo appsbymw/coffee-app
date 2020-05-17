@@ -83,3 +83,9 @@ iOSInjectionProject/
 /hog-osc/Pods
 hogosc/Pods
 hogosc/hogosc.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+
+# JEKYLL SITE
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
