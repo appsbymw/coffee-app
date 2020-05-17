@@ -28,6 +28,7 @@ Development is streamed every Monday at 6:30pm CST on [Twitch.tv](https://www.tw
 - [Trello](https://trello.com/b/KgqJHA8o/coffee-app)
 - [Twitch Channel](https://www.twitch.tv/appsbymw) - Development is streamed here every week
 - [YouTube Channel](https://www.youtube.com/channel/UCUZDQxNOmpkwah344CrlmuQ) - Where live streams go after they are done
+- [Project Website](https://coffee-companion.appsbymw.com)
 
 ---
 
