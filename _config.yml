@@ -1,0 +1,13 @@
+name: Coffee Companion
+description: The coffee app to help you brew the best coffee you can!
+url: coffee-companion.appsbymw.com
+permalink: /release-notes/:year/:month/:day/:title
+collections:
+  projects:
+    output: true
+plugins:
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-sitemap
+gist:
+  noscript: false

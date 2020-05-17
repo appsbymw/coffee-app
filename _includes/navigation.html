@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="collapse navbar-collapse" id="navbarColor02">
+    <ul class="navbar-nav mr-auto">
+      {% for item in site.data.navigation %}
+      <li class="nav-item">
+        <a href="{{ item.link }}" {% if page.url contains item.link %}class="nav-link active" {% else %} class="nav-link" {% endif %}>{{ item.name }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
+    <script type='text/javascript'>
+        kofiwidget2.init('Buy me a coffee on Ko-fi', '#29abe0', 'K3K01PIPX'); kofiwidget2.draw();
+    </script>
+  </div>
+</nav>
