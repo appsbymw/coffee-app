@@ -4,7 +4,7 @@
 
 Coffee Companion is an iOS app that helps you make pour over coffee. It has a timer built in and will calculate the amount of water needed for the blooming process and the total water.
 
-Development is streamed every Monday at 6:30pm CST on [Twitch.tv](https://www.twitch.tv/appsbymw). You can watch previous development on [Youtube.com](https://www.youtube.com/channel/UCUZDQxNOmpkwah344CrlmuQ).
+Development is streamed every Monday at 1:00pm CST on [Twitch.tv](https://www.twitch.tv/appsbymw) and should last about 2 hours. Feel free to drop by even if you don't have a Twitch account. You can watch previous development on [Youtube.com](https://www.youtube.com/channel/UCUZDQxNOmpkwah344CrlmuQ).
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K01PIPX)
 
