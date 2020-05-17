@@ -6,7 +6,7 @@ Coffee Companion is an iOS app that helps you make pour over coffee. It has a ti
 
 Development is streamed every Monday at 6:30pm CST on [Twitch.tv](https://www.twitch.tv/appsbymw). You can watch previous development on [Youtube.com](https://www.youtube.com/channel/UCUZDQxNOmpkwah344CrlmuQ).
 
-<script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Coffee Companion', '#29abe0', 'K3K01PIPX');kofiwidget2.draw();</script> 
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K01PIPX)
 
 # Features
 
