@@ -8,6 +8,8 @@ Development is streamed every Monday at 6:30pm CST on [Twitch.tv](https://www.tw
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K01PIPX)
 
+![Gif of how the app works/looks so far](https://github.com/appsbymw/coffee-app/blob/website/assets/images/v0-0-1.gif?raw=true)
+
 # Features
 
 - Editable coffee to water ratio
