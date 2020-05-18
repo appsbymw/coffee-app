@@ -26,7 +26,7 @@ struct CalcMain: View {
         Divider()
         Blooming(coffeeAmount: coffeeAmount)
         Divider()
-        Timer()
+        TimerView()
           .padding(.top)
       }
       .padding(.horizontal)

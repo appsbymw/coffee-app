@@ -8,12 +8,17 @@
 
 import SwiftUI
 
-struct Timer: View {
+struct TimerView: View {
     
+    @State private var time = ["00","00"] // [MINUTES, SECONDS]
+    @State private var minutes = 0
+    @State private var seconds = 0
+    @State private var timerIsGoing = false
+    @State private var timer: Timer? = nil
     
     var body: some View {
         VStack {
-            Text("00:00")
+            Text("\(time[0]):\(time[1])")
                 .font(.title)
                 .padding(.bottom, 50)
             Button(action:{
@@ -28,10 +33,15 @@ struct Timer: View {
             Spacer()
         }
     }
+    
+    func startTimer(){
+        timerIsGoing = true
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true)
+    }
 }
 
-struct Timer_Previews: PreviewProvider {
+struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
-        Timer()
+        TimerView()
     }
 }
