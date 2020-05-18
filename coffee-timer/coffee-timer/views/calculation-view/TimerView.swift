@@ -34,7 +34,9 @@ struct TimerView: View {
     private var StartButton: some View {
         Button(action:{
             print("Toggle timer")
-            self.startTimer()
+            withAnimation{
+                self.startTimer()
+            }
         }){
             Text("Start")
                 .padding(.all, 10)
@@ -42,13 +44,16 @@ struct TimerView: View {
                 .foregroundColor(.black)
                 .cornerRadius(10)
         }
+        .transition(.scale)
     }
     
     // MARK: Button for stop
     private var StopButton: some View {
         Button(action:{
             print("Toggle timer")
-            self.stopTimer()
+            withAnimation{
+                self.stopTimer()
+            }
         }){
             Text("Stop")
                 .padding(.all, 10)
@@ -56,6 +61,7 @@ struct TimerView: View {
                 .foregroundColor(.white)
                 .cornerRadius(10)
         }
+        .transition(.scale)
     }
     
     func startTimer(){
@@ -76,6 +82,8 @@ struct TimerView: View {
         timerIsGoing = false
         timer?.invalidate()
         timer = nil
+        self.minutes = 0
+        self.seconds = 0
     }
 }
 
