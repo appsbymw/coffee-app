@@ -17,7 +17,7 @@ struct Blooming: View {
         HStack{
           Text("Water for Bloom")
           Spacer()
-          Text("\(coffeeAmount * blooming) g")
+          Text("\((coffeeAmount * blooming).toString(fractionDigits: 2)) g")
             .foregroundColor(.blue)
         }
         HStack{

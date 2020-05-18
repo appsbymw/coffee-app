@@ -10,7 +10,7 @@ import SwiftUI
 
 struct CoffeeAmount: View {
     
-    let coffee = Color.init(UIColor(named: "coffee")!)
+    let coffeeColor = Color.init(UIColor(named: "coffee")!)
     
     var coffeeAmount: Double
     
@@ -19,8 +19,8 @@ struct CoffeeAmount: View {
             Text("Coffee ground")
                 .foregroundColor(.primary)
             Spacer()
-            Text("\(coffeeAmount) g")
-                .foregroundColor(coffee)
+            Text("\(coffeeAmount.toString(fractionDigits: 2)) g")
+                .foregroundColor(coffeeColor)
         }
     }
 }

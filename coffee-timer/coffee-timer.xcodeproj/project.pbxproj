@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		370A7AA8246A1C6300BF713F /* CoffeeAdjust.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370A7AA7246A1C6300BF713F /* CoffeeAdjust.swift */; };
+		37802214247308C100F9EAF5 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37802213247308C100F9EAF5 /* Double+Extensions.swift */; };
 		37A0B9672460DE8800CE3E86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0B9662460DE8800CE3E86 /* AppDelegate.swift */; };
 		37A0B9692460DE8800CE3E86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0B9682460DE8800CE3E86 /* SceneDelegate.swift */; };
 		37A0B96C2460DE8800CE3E86 /* coffee_timer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37A0B96A2460DE8800CE3E86 /* coffee_timer.xcdatamodeld */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		370A7AA7246A1C6300BF713F /* CoffeeAdjust.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeAdjust.swift; sourceTree = "<group>"; };
+		37802213247308C100F9EAF5 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		37A0B9632460DE8800CE3E86 /* coffee-timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coffee-timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37A0B9662460DE8800CE3E86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37A0B9682460DE8800CE3E86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		378022122473087D00F9EAF5 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				37802213247308C100F9EAF5 /* Double+Extensions.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
 		37A0B95A2460DE8700CE3E86 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +82,7 @@
 		37A0B9652460DE8800CE3E86 /* coffee-timer */ = {
 			isa = PBXGroup;
 			children = (
+				378022122473087D00F9EAF5 /* extensions */,
 				37A0B97D2460DFCA00CE3E86 /* views */,
 				37A0B9662460DE8800CE3E86 /* AppDelegate.swift */,
 				37A0B9682460DE8800CE3E86 /* SceneDelegate.swift */,
@@ -186,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37802214247308C100F9EAF5 /* Double+Extensions.swift in Sources */,
 				37A0B9822460E07A00CE3E86 /* TitleBlock.swift in Sources */,
 				37A0B9672460DE8800CE3E86 /* AppDelegate.swift in Sources */,
 				37A0B9802460E02700CE3E86 /* CalcMain.swift in Sources */,

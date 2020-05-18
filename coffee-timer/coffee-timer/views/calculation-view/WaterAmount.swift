@@ -17,7 +17,7 @@ struct WaterAmount: View {
         HStack{
             Text("Water Amount")
             Spacer()
-            Text("\(coffeeAmount * ratio) g")
+            Text("\((coffeeAmount * ratio).toString(fractionDigits: 2)) g")
                 .foregroundColor(.blue)
         }
     }

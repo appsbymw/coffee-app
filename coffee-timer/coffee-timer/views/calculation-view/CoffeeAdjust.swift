@@ -9,29 +9,62 @@
 import SwiftUI
 
 struct CoffeeAdjust: View {
-    @Binding var coffeeAmount: Double
+    
+    @Environment(\.presentationMode) var presentationMode
+    
     @State private var newAmount = ""
+    
+    @Binding var coffeeAmount: Double
+    
+    let coffeeColor = Color.init(UIColor(named: "coffee")!)
     
     var body: some View {
         VStack{
             HStack{
+                Spacer()
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }){
+                    Text("Cancel")
+                        .foregroundColor(.red)
+                }
+            }
+            .padding(.top)
+            Spacer()
+            HStack{
                 Text("New Coffee Amount")
                 Spacer()
-                TextField("New Coffee Amount",
-                          text: Binding(get:{
-                            self.newAmount
-                          }, set: { (newValue) in
-                            self.newAmount = newValue
-                            self.coffeeAmount = Double(self.newAmount) ?? 0.0
-                          }))
+                TextField("New Coffee Amount", text: $newAmount)
                     .keyboardType(.decimalPad)
                     .multilineTextAlignment(.trailing)
+                    .foregroundColor(coffeeColor)
             }
-            .onAppear{
-                self.newAmount = "\(self.coffeeAmount)"
+            
+            HStack{
+                Spacer()
+                Button(action: {
+                    self.saveNewValue()
+                }){
+                    Text("Save")
+                        .padding(.all, 10)
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                .padding(.vertical)
             }
-            .padding(.horizontal)
+            
+            Spacer()
         }
+        .padding(.horizontal)
+        .onAppear{
+            self.newAmount = "\(self.coffeeAmount)"
+        }
+    }
+    
+    func saveNewValue(){
+        coffeeAmount = Double(newAmount) ?? 0.0
+        presentationMode.wrappedValue.dismiss()
     }
 }
 
