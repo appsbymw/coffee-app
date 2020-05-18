@@ -22,6 +22,7 @@ struct CoffeeAmount: View {
             Text("\(coffeeAmount.toString(fractionDigits: 2)) g")
                 .foregroundColor(coffeeColor)
         }
+        .padding(.vertical)
     }
 }
 

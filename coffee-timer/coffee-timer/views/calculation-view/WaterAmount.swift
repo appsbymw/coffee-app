@@ -20,6 +20,7 @@ struct WaterAmount: View {
             Text("\((coffeeAmount * ratio).toString(fractionDigits: 2)) g")
                 .foregroundColor(.blue)
         }
+        .padding(.vertical)
     }
 }
 

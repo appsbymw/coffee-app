@@ -20,7 +20,6 @@ struct CalcMain: View {
             self.isCoffeeAmountEditable.toggle()
         }){
             CoffeeAmount(coffeeAmount: coffeeAmount)
-                .padding(.vertical)
         }
         WaterAmount(coffeeAmount: coffeeAmount)
         Divider()

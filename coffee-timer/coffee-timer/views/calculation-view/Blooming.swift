@@ -20,12 +20,14 @@ struct Blooming: View {
           Text("\((coffeeAmount * blooming).toString(fractionDigits: 2)) g")
             .foregroundColor(.blue)
         }
+        .padding(.vertical)
         HStack{
           Text("Time for Bloom")
           Spacer()
           Text("01:30")
             .foregroundColor(.orange)
         }
+        .padding(.vertical)
       }
     }
 }
