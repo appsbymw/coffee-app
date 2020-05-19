@@ -1,4 +1,8 @@
 - name: Home
   link: /
-- name: Release Notes
-  link: /release-notes
+# - name: Release Notes
+#   link: /release-notes
+- name: Live Streams
+  link: /live-streams
+- name: About
+  link: /about

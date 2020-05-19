@@ -35,3 +35,22 @@ permalink: /
         </p>
     </div>
 </div>
+
+<div class="row">
+    <div class="col">
+        <h1>Latest Live Stream</h1>
+        {% assign sorted = site.data.videos | reverse %}
+        {% assign video = sorted[0] %}
+        <h2>{{ video.date }}</h2>
+        <p>{{ video.description }} If you want to read more then check out the full recap at <a href="{{video.post-link}}" target="_blank" rel="noopener noreferrer">Ko-Fi.</a></p>
+        <div class="video-container">
+            <iframe
+            width="100%"
+            src="https://www.youtube.com/embed/{{ video.id }}"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+            </iframe>
+          </div>
+    </div>
+</div>
