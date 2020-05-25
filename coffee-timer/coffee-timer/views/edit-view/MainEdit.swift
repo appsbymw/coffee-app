@@ -9,17 +9,27 @@
 import SwiftUI
 
 struct MainEdit: View {
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
         VStack(alignment: .leading){
-            TitleBlock(isEditing: true)
-            Divider()
+            HStack{
+                Spacer()
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }){
+                    Text("Done")
+                        .foregroundColor(.green)
+                }
+            }
             RatioEdit()
             Divider()
             BloomLength()
             Divider()
             BloomAmount()
             Spacer()
-        }.padding(.horizontal)
+        }
+        .padding(.top)
+        .padding(.horizontal)
     }
 }
 

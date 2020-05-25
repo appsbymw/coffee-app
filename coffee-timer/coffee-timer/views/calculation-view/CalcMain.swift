@@ -9,13 +9,13 @@
 import SwiftUI
 
 struct CalcMain: View {
-    @State private var isSettingsShown = false
+    @State var isSettingsShown = false
     @State var coffeeAmount: Double = 60.0
-    @State private var chosenSetting: EditWindows = .coffeeAmount
+    @State var chosenSetting: EditWindows = .coffeeAmount
 
     var body: some View {
       VStack {
-        TitleBlock()
+        TitleBlock(isSettingShown: $isSettingsShown, chosenSetting: $chosenSetting)
         Divider()
         Button(action:{
             self.isSettingsShown = true
@@ -32,7 +32,11 @@ struct CalcMain: View {
       }
       .padding(.horizontal)
       .sheet(isPresented: $isSettingsShown) {
-        CoffeeAdjust(coffeeAmount: self.$coffeeAmount)
+        if self.chosenSetting == .coffeeAmount {
+            CoffeeAdjust(coffeeAmount: self.$coffeeAmount)
+        } else {
+            MainEdit()
+        }
         }
     }
 }

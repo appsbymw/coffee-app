@@ -26,6 +26,7 @@ struct RatioEdit: View {
                 Spacer()
                 VStack{
                     Text("\(coffeeAmount) g")
+                        .font(.title)
                         .foregroundColor(coffeeColor)
                     Stepper(onIncrement: {
                         self.coffeeAmount = self.coffeeAmount + 1
@@ -38,6 +39,7 @@ struct RatioEdit: View {
                 Text("to").padding(.all)
                 VStack{
                     Text("\(waterAmount) g")
+                        .font(.title)
                         .foregroundColor(.blue)
                     Stepper(onIncrement: {
                         self.waterAmount = self.waterAmount + 1

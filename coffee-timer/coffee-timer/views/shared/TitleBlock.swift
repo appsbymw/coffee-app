@@ -9,18 +9,15 @@
 import SwiftUI
 
 struct TitleBlock: View {
-    var isEditing: Bool = false
+    @Binding var isSettingShown: Bool
+    @Binding var chosenSetting: EditWindows
     
     var body: some View {
         HStack {
             Text("Chemex")
                 .font(.largeTitle)
             Spacer()
-            if isEditing == true {
-                DoneButton
-            } else {
-                EditButton
-            }
+            EditButton
         }.frame(maxHeight: 75)
     }
     
@@ -28,6 +25,9 @@ struct TitleBlock: View {
         VStack{
             Button(action: {
                 print("Toggle edit")
+                self.chosenSetting = .brewSettings
+                self.isSettingShown = true
+                
             }){
                 Text("Edit")
                     .foregroundColor(.red)
@@ -47,22 +47,12 @@ struct TitleBlock: View {
             }
         }
     }
-    
-    var DoneButton: some View {
-        VStack{
-            Button(action:{
-                print("done button pressed")
-            }){
-                Text("Done")
-                    .foregroundColor(.green)
-            }
-            Spacer()
-        }
-    }
 }
 
-struct TitleBlock_Previews: PreviewProvider {
-    static var previews: some View {
-        TitleBlock(isEditing: true)
-    }
-}
+//struct TitleBlock_Previews: PreviewProvider {
+//    private var isSettingShown: Bool = true
+//    private var chosenSetting = Binding(
+//    static var previews: some View {
+//        TitleBlock(isSettingShown: isSettingShown, chosenSetting: chosenSetting)
+//    }
+//}
