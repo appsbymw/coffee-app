@@ -9,15 +9,17 @@
 import SwiftUI
 
 struct CalcMain: View {
-    @State private var isCoffeeAmountEditable = false
+    @State private var isSettingsShown = false
     @State var coffeeAmount: Double = 60.0
-    
+    @State private var chosenSetting: EditWindows = .coffeeAmount
+
     var body: some View {
       VStack {
         TitleBlock()
         Divider()
         Button(action:{
-            self.isCoffeeAmountEditable.toggle()
+            self.isSettingsShown = true
+            self.chosenSetting = .coffeeAmount
         }){
             CoffeeAmount(coffeeAmount: coffeeAmount)
         }
@@ -29,7 +31,7 @@ struct CalcMain: View {
           .padding(.top)
       }
       .padding(.horizontal)
-      .sheet(isPresented: $isCoffeeAmountEditable) {
+      .sheet(isPresented: $isSettingsShown) {
         CoffeeAdjust(coffeeAmount: self.$coffeeAmount)
         }
     }

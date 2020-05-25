@@ -22,6 +22,11 @@
 		37A0B9862460E4F300CE3E86 /* WaterAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0B9852460E4F300CE3E86 /* WaterAmount.swift */; };
 		37A0B9882460E5A800CE3E86 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0B9872460E5A800CE3E86 /* TimerView.swift */; };
 		37A0B98C2460E8F800CE3E86 /* Blooming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0B98B2460E8F800CE3E86 /* Blooming.swift */; };
+		37BADDF4247C43C500DFC8C3 /* MainEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BADDF3247C43C500DFC8C3 /* MainEdit.swift */; };
+		37BADDF6247C460800DFC8C3 /* RatioEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BADDF5247C460800DFC8C3 /* RatioEdit.swift */; };
+		37BADDF8247C4B0600DFC8C3 /* BloomLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BADDF7247C4B0600DFC8C3 /* BloomLength.swift */; };
+		37BADDFA247C4EEE00DFC8C3 /* BloomAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BADDF9247C4EEE00DFC8C3 /* BloomAmount.swift */; };
+		37BADDFD247C541500DFC8C3 /* NavigationEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BADDFC247C541500DFC8C3 /* NavigationEnums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +47,11 @@
 		37A0B9852460E4F300CE3E86 /* WaterAmount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterAmount.swift; sourceTree = "<group>"; };
 		37A0B9872460E5A800CE3E86 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		37A0B98B2460E8F800CE3E86 /* Blooming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blooming.swift; sourceTree = "<group>"; };
+		37BADDF3247C43C500DFC8C3 /* MainEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEdit.swift; sourceTree = "<group>"; };
+		37BADDF5247C460800DFC8C3 /* RatioEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatioEdit.swift; sourceTree = "<group>"; };
+		37BADDF7247C4B0600DFC8C3 /* BloomLength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomLength.swift; sourceTree = "<group>"; };
+		37BADDF9247C4EEE00DFC8C3 /* BloomAmount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomAmount.swift; sourceTree = "<group>"; };
+		37BADDFC247C541500DFC8C3 /* NavigationEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationEnums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +92,7 @@
 		37A0B9652460DE8800CE3E86 /* coffee-timer */ = {
 			isa = PBXGroup;
 			children = (
+				37BADDFB247C540000DFC8C3 /* helpers */,
 				378022122473087D00F9EAF5 /* extensions */,
 				37A0B97D2460DFCA00CE3E86 /* views */,
 				37A0B9662460DE8800CE3E86 /* AppDelegate.swift */,
@@ -107,6 +118,7 @@
 		37A0B97D2460DFCA00CE3E86 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				37BADDF2247C43AB00DFC8C3 /* edit-view */,
 				37BADDF1247C433500DFC8C3 /* shared */,
 				37A0B97E2460DFD400CE3E86 /* calculation-view */,
 			);
@@ -132,6 +144,25 @@
 				37A0B9812460E07A00CE3E86 /* TitleBlock.swift */,
 			);
 			path = shared;
+			sourceTree = "<group>";
+		};
+		37BADDF2247C43AB00DFC8C3 /* edit-view */ = {
+			isa = PBXGroup;
+			children = (
+				37BADDF3247C43C500DFC8C3 /* MainEdit.swift */,
+				37BADDF5247C460800DFC8C3 /* RatioEdit.swift */,
+				37BADDF7247C4B0600DFC8C3 /* BloomLength.swift */,
+				37BADDF9247C4EEE00DFC8C3 /* BloomAmount.swift */,
+			);
+			path = "edit-view";
+			sourceTree = "<group>";
+		};
+		37BADDFB247C540000DFC8C3 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				37BADDFC247C541500DFC8C3 /* NavigationEnums.swift */,
+			);
+			path = helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +238,7 @@
 			files = (
 				37802214247308C100F9EAF5 /* Double+Extensions.swift in Sources */,
 				37A0B9822460E07A00CE3E86 /* TitleBlock.swift in Sources */,
+				37BADDFD247C541500DFC8C3 /* NavigationEnums.swift in Sources */,
 				37A0B9672460DE8800CE3E86 /* AppDelegate.swift in Sources */,
 				37A0B9802460E02700CE3E86 /* CalcMain.swift in Sources */,
 				37A0B9862460E4F300CE3E86 /* WaterAmount.swift in Sources */,
@@ -214,9 +246,13 @@
 				37A0B96C2460DE8800CE3E86 /* coffee_timer.xcdatamodeld in Sources */,
 				37A0B98C2460E8F800CE3E86 /* Blooming.swift in Sources */,
 				37A0B9882460E5A800CE3E86 /* TimerView.swift in Sources */,
+				37BADDFA247C4EEE00DFC8C3 /* BloomAmount.swift in Sources */,
 				37A0B96E2460DE8800CE3E86 /* ContentView.swift in Sources */,
 				370A7AA8246A1C6300BF713F /* CoffeeAdjust.swift in Sources */,
+				37BADDF6247C460800DFC8C3 /* RatioEdit.swift in Sources */,
 				37A0B9692460DE8800CE3E86 /* SceneDelegate.swift in Sources */,
+				37BADDF4247C43C500DFC8C3 /* MainEdit.swift in Sources */,
+				37BADDF8247C4B0600DFC8C3 /* BloomLength.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
