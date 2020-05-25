@@ -107,6 +107,7 @@
 		37A0B97D2460DFCA00CE3E86 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				37BADDF1247C433500DFC8C3 /* shared */,
 				37A0B97E2460DFD400CE3E86 /* calculation-view */,
 			);
 			path = views;
@@ -116,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				37A0B97F2460E02700CE3E86 /* CalcMain.swift */,
-				37A0B9812460E07A00CE3E86 /* TitleBlock.swift */,
 				37A0B9832460E2EC00CE3E86 /* CoffeeAmount.swift */,
 				37A0B9852460E4F300CE3E86 /* WaterAmount.swift */,
 				37A0B9872460E5A800CE3E86 /* TimerView.swift */,
@@ -124,6 +124,14 @@
 				370A7AA7246A1C6300BF713F /* CoffeeAdjust.swift */,
 			);
 			path = "calculation-view";
+			sourceTree = "<group>";
+		};
+		37BADDF1247C433500DFC8C3 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				37A0B9812460E07A00CE3E86 /* TitleBlock.swift */,
+			);
+			path = shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
