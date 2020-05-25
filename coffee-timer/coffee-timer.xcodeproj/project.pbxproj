@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		370A7AA8246A1C6300BF713F /* CoffeeAdjust.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370A7AA7246A1C6300BF713F /* CoffeeAdjust.swift */; };
+		374474A8247C5AF3009D18F7 /* UserDefaults+PropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374474A7247C5AF3009D18F7 /* UserDefaults+PropertyWrapper.swift */; };
 		37802214247308C100F9EAF5 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37802213247308C100F9EAF5 /* Double+Extensions.swift */; };
 		37A0B9672460DE8800CE3E86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0B9662460DE8800CE3E86 /* AppDelegate.swift */; };
 		37A0B9692460DE8800CE3E86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0B9682460DE8800CE3E86 /* SceneDelegate.swift */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		370A7AA7246A1C6300BF713F /* CoffeeAdjust.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeAdjust.swift; sourceTree = "<group>"; };
+		374474A7247C5AF3009D18F7 /* UserDefaults+PropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+PropertyWrapper.swift"; sourceTree = "<group>"; };
 		37802213247308C100F9EAF5 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		37A0B9632460DE8800CE3E86 /* coffee-timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coffee-timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37A0B9662460DE8800CE3E86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				37BADDFC247C541500DFC8C3 /* NavigationEnums.swift */,
+				374474A7247C5AF3009D18F7 /* UserDefaults+PropertyWrapper.swift */,
 			);
 			path = helpers;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				37A0B9692460DE8800CE3E86 /* SceneDelegate.swift in Sources */,
 				37BADDF4247C43C500DFC8C3 /* MainEdit.swift in Sources */,
 				37BADDF8247C4B0600DFC8C3 /* BloomLength.swift in Sources */,
+				374474A8247C5AF3009D18F7 /* UserDefaults+PropertyWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

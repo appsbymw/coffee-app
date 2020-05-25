@@ -9,12 +9,10 @@
 import SwiftUI
 
 struct CoffeeAdjust: View {
-    
     @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var settings: UserSettings
     
     @State private var newAmount = ""
-    
-    @Binding var coffeeAmount: Double
     
     let coffeeColor = Color.init(UIColor(named: "coffee")!)
     
@@ -58,12 +56,12 @@ struct CoffeeAdjust: View {
         }
         .padding(.horizontal)
         .onAppear{
-            self.newAmount = "\(self.coffeeAmount)"
+            self.newAmount = "\(self.settings.coffeeGround)"
         }
     }
     
     func saveNewValue(){
-        coffeeAmount = Double(newAmount) ?? 0.0
+        settings.coffeeGround = Double(newAmount) ?? 0.0
         presentationMode.wrappedValue.dismiss()
     }
 }
@@ -71,6 +69,6 @@ struct CoffeeAdjust: View {
 struct CoffeeAdjust_Previews: PreviewProvider {
     @State static var amt: Double = 10.0
     static var previews: some View {
-        CoffeeAdjust(coffeeAmount: $amt)
+        CoffeeAdjust()
     }
 }

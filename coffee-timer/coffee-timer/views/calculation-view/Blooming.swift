@@ -9,26 +9,29 @@
 import SwiftUI
 
 struct Blooming: View {
+    @EnvironmentObject var settings: UserSettings
+    
     var coffeeAmount: Double
-    var blooming = 2.0 // User defaults at somepoint
     
     var body: some View {
       VStack{
         HStack{
           Text("Water for Bloom")
           Spacer()
-          Text("\((coffeeAmount * blooming).toString(fractionDigits: 2)) g")
+            Text("\((coffeeAmount * Double(settings.bloomRatio)).toString(fractionDigits: 2)) g")
             .foregroundColor(.blue)
         }
         .padding(.vertical)
         HStack{
           Text("Time for Bloom")
           Spacer()
-          Text("01:30")
+            Text(settings.bloomTime)
             .foregroundColor(.orange)
         }
         .padding(.vertical)
-      }
+      }.onAppear{
+        self.settings.formatTime()
+        }
     }
 }
 

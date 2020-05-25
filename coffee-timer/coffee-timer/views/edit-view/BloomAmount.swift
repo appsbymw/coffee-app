@@ -9,7 +9,8 @@
 import SwiftUI
 
 struct BloomAmount: View {
-    @State private var bloomRatio: Int = 2
+    @EnvironmentObject var settings: UserSettings
+    
     var body: some View {
         VStack(alignment: .leading){
             Text("Bloom water amount")
@@ -22,7 +23,7 @@ struct BloomAmount: View {
                     }, onDecrement: {
                         self.decrement()
                     }) {
-                        Text("\(bloomRatio)x")
+                        Text("\(settings.bloomRatio)x")
                             .font(.title) +
                             Text(" the coffee amount")
                     }
@@ -32,13 +33,13 @@ struct BloomAmount: View {
     }
     
     private func increment(){
-        bloomRatio = bloomRatio + 1
+        settings.bloomRatio = settings.bloomRatio + 1
     }
     private func decrement(){
-        if bloomRatio > 2 {
-            bloomRatio = bloomRatio - 1
+        if settings.bloomRatio > 2 {
+            settings.bloomRatio = settings.bloomRatio - 1
         } else {
-            bloomRatio = 1
+            settings.bloomRatio = 1
         }
     }
 }

@@ -9,9 +9,8 @@
 import SwiftUI
 
 struct BloomLength: View {
-    @State private var bloomLength: Int = 90
-    @State private var minutes: String = "00"
-    @State private var seconds: String = "00"
+    @EnvironmentObject var settings: UserSettings
+    
     var body: some View {
         VStack(alignment: .leading){
             Text("Bloom length")
@@ -21,33 +20,22 @@ struct BloomLength: View {
             }, onDecrement: {
                 self.decrement()
             }) {
-                Text("\(minutes):\(seconds)")
+                Text(settings.bloomTime)
                     .font(.title)
             }
-        }.onAppear{
-            self.formatTime()
         }
     }
     
     private func increment(){
-        bloomLength = bloomLength + 1
-        formatTime()
+        settings.bloomLength = settings.bloomLength + 1
     }
     
     private func decrement(){
-        if bloomLength > 2 {
-            bloomLength = bloomLength - 1
+        if settings.bloomLength > 2 {
+            settings.bloomLength = settings.bloomLength - 1
         } else {
-            bloomLength = 1
+            settings.bloomLength = 1
         }
-        formatTime()
-    }
-    
-    private func formatTime(){
-        let tempMinutes = bloomLength / 60
-        let tempSeconds = bloomLength % 60
-        minutes = String(format: "%02d", tempMinutes)
-        seconds = String(format: "%02d", tempSeconds)
     }
 }
 

@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct CalcMain: View {
+    @EnvironmentObject var settings: UserSettings
     @State var isSettingsShown = false
     @State var coffeeAmount: Double = 60.0
     @State var chosenSetting: EditWindows = .coffeeAmount
@@ -21,7 +22,7 @@ struct CalcMain: View {
             self.isSettingsShown = true
             self.chosenSetting = .coffeeAmount
         }){
-            CoffeeAmount(coffeeAmount: coffeeAmount)
+            CoffeeAmount(coffeeAmount: settings.coffeeGround)
         }
         WaterAmount(coffeeAmount: coffeeAmount)
         Divider()
@@ -33,9 +34,10 @@ struct CalcMain: View {
       .padding(.horizontal)
       .sheet(isPresented: $isSettingsShown) {
         if self.chosenSetting == .coffeeAmount {
-            CoffeeAdjust(coffeeAmount: self.$coffeeAmount)
+            CoffeeAdjust()
+                .environmentObject(self.settings)
         } else {
-            MainEdit()
+            MainEdit().environmentObject(self.settings)
         }
         }
     }

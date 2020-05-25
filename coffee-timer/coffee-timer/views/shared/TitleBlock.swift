@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct TitleBlock: View {
+    @EnvironmentObject var settings: UserSettings
     @Binding var isSettingShown: Bool
     @Binding var chosenSetting: EditWindows
     
@@ -34,13 +35,13 @@ struct TitleBlock: View {
             }.padding(.bottom)
             HStack{
                 VStack{
-                    Text("16 g")
+                    Text("\(settings.coffeeAmount) g")
                     Text("Coffee")
                         .font(.footnote)
                 }
                 Text(":")
                 VStack{
-                    Text("1 g")
+                    Text("\(settings.waterAmount) g")
                     Text("Water")
                         .font(.footnote)
                 }

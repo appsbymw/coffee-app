@@ -9,13 +9,14 @@
 import SwiftUI
 
 struct ContentView: View {
-  var body: some View {
-    CalcMain()
-  }
+    @EnvironmentObject var settings: UserSettings
+    var body: some View {
+        CalcMain()
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
-  static var previews: some View {
-    ContentView()
-  }
+    static var previews: some View {
+        ContentView().environmentObject(UserSettings())
+    }
 }

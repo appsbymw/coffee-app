@@ -10,6 +10,7 @@ import SwiftUI
 
 struct MainEdit: View {
     @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var settings: UserSettings
     var body: some View {
         VStack(alignment: .leading){
             HStack{
