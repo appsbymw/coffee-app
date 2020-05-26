@@ -34,7 +34,7 @@
 		370A7AA7246A1C6300BF713F /* CoffeeAdjust.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeAdjust.swift; sourceTree = "<group>"; };
 		374474A7247C5AF3009D18F7 /* UserDefaults+PropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+PropertyWrapper.swift"; sourceTree = "<group>"; };
 		37802213247308C100F9EAF5 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
-		37A0B9632460DE8800CE3E86 /* coffee-timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coffee-timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37A0B9632460DE8800CE3E86 /* CoffeeCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37A0B9662460DE8800CE3E86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37A0B9682460DE8800CE3E86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		37A0B96B2460DE8800CE3E86 /* coffee_timer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = coffee_timer.xcdatamodel; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 		37A0B9642460DE8800CE3E86 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				37A0B9632460DE8800CE3E86 /* coffee-timer.app */,
+				37A0B9632460DE8800CE3E86 /* CoffeeCompanion.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -185,7 +185,7 @@
 			);
 			name = "coffee-timer";
 			productName = "coffee-timer";
-			productReference = 37A0B9632460DE8800CE3E86 /* coffee-timer.app */;
+			productReference = 37A0B9632460DE8800CE3E86 /* CoffeeCompanion.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -401,8 +401,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.appsbymw.coffee-timer";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appsbymw.coffee-companion";
+				PRODUCT_NAME = CoffeeCompanion;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -421,8 +422,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.appsbymw.coffee-timer";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appsbymw.coffee-companion";
+				PRODUCT_NAME = CoffeeCompanion;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
