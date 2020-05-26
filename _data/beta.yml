@@ -1,0 +1,4 @@
+- version: 0
+  build: 1
+  summary: "Everything! This is the first beta build. You can tap on Coffee Ground to change the amount and Edit to change other parts of the app. Report issues on GitHub or through testflight"
+  isCandidate: "❌ No"
