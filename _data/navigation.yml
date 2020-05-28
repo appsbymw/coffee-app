@@ -4,5 +4,7 @@
 #   link: /release-notes
 - name: Live Streams
   link: /live-streams
+- name: Beta
+  link: /beta
 - name: About
   link: /about

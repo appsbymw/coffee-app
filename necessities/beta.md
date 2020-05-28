@@ -6,7 +6,7 @@ permalink: /beta
 
 # TestFlight Information
 
-This page contains information for those that are running the pre-release version of Coffee Companion. If you want to be added to TestFlight, please [click here](). If the link does not work, then there is no space in the beta program currently.
+This page contains information for those that are running the pre-release version of Coffee Companion. If you want to be added to TestFlight, please [click here](https://testflight.apple.com/join/KUcqx4Mp).
 
 # What do you do if there is an issue?
 
