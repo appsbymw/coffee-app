@@ -9,10 +9,13 @@
 import SwiftUI
 
 struct CoffeeAdjust: View {
+    @Environment(\.managedObjectContext) var moc
     @Environment(\.presentationMode) var presentationMode
-    @EnvironmentObject var settings: UserSettings
     
-    @State private var newAmount = ""
+    let bmm = BrewMethodManager()
+    var brewMethod: BrewMethod
+    
+    @State var newAmount = ""
     
     let coffeeColor = Color.init(UIColor(named: "coffee")!)
     
@@ -29,15 +32,7 @@ struct CoffeeAdjust: View {
             }
             .padding(.top)
             Spacer()
-            HStack{
-                Text("New Coffee Amount")
-                Spacer()
-                TextField("New Coffee Amount", text: $newAmount)
-                    .keyboardType(.decimalPad)
-                    .multilineTextAlignment(.trailing)
-                    .foregroundColor(coffeeColor)
-            }
-            
+            CoffeeAmountEdit(coffeeGround: $newAmount)
             HStack{
                 Spacer()
                 Button(action: {
@@ -55,13 +50,11 @@ struct CoffeeAdjust: View {
             Spacer()
         }
         .padding(.horizontal)
-        .onAppear{
-            self.newAmount = "\(self.settings.coffeeGround)"
-        }
     }
     
     func saveNewValue(){
-        settings.coffeeGround = Double(newAmount) ?? 0.0
+        brewMethod.coffeeGround = Double(newAmount) ?? 0.0
+        bmm.updateBrewMethod(context: moc, updatedBrew: brewMethod)
         presentationMode.wrappedValue.dismiss()
     }
 }
@@ -69,6 +62,6 @@ struct CoffeeAdjust: View {
 struct CoffeeAdjust_Previews: PreviewProvider {
     @State static var amt: Double = 10.0
     static var previews: some View {
-        CoffeeAdjust()
+        CoffeeAdjust(brewMethod: BrewMethod())
     }
 }

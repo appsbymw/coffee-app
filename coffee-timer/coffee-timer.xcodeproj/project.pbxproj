@@ -10,6 +10,10 @@
 		370A7AA8246A1C6300BF713F /* CoffeeAdjust.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370A7AA7246A1C6300BF713F /* CoffeeAdjust.swift */; };
 		374474A8247C5AF3009D18F7 /* UserDefaults+PropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374474A7247C5AF3009D18F7 /* UserDefaults+PropertyWrapper.swift */; };
 		37802214247308C100F9EAF5 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37802213247308C100F9EAF5 /* Double+Extensions.swift */; };
+		3796DF4F24857C5300BA6A51 /* BrewChoicesMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3796DF4E24857C5300BA6A51 /* BrewChoicesMenu.swift */; };
+		3796DF5224857D6300BA6A51 /* BrewMethodManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3796DF5124857D6300BA6A51 /* BrewMethodManager.swift */; };
+		3796DF542485954A00BA6A51 /* CoffeeAmountEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3796DF532485954A00BA6A51 /* CoffeeAmountEdit.swift */; };
+		3796DF5624859A3400BA6A51 /* TitleEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3796DF5524859A3400BA6A51 /* TitleEdit.swift */; };
 		37A0B9672460DE8800CE3E86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0B9662460DE8800CE3E86 /* AppDelegate.swift */; };
 		37A0B9692460DE8800CE3E86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0B9682460DE8800CE3E86 /* SceneDelegate.swift */; };
 		37A0B96C2460DE8800CE3E86 /* coffee_timer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37A0B96A2460DE8800CE3E86 /* coffee_timer.xcdatamodeld */; };
@@ -34,6 +38,10 @@
 		370A7AA7246A1C6300BF713F /* CoffeeAdjust.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeAdjust.swift; sourceTree = "<group>"; };
 		374474A7247C5AF3009D18F7 /* UserDefaults+PropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+PropertyWrapper.swift"; sourceTree = "<group>"; };
 		37802213247308C100F9EAF5 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		3796DF4E24857C5300BA6A51 /* BrewChoicesMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewChoicesMenu.swift; sourceTree = "<group>"; };
+		3796DF5124857D6300BA6A51 /* BrewMethodManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewMethodManager.swift; sourceTree = "<group>"; };
+		3796DF532485954A00BA6A51 /* CoffeeAmountEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeAmountEdit.swift; sourceTree = "<group>"; };
+		3796DF5524859A3400BA6A51 /* TitleEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleEdit.swift; sourceTree = "<group>"; };
 		37A0B9632460DE8800CE3E86 /* CoffeeCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37A0B9662460DE8800CE3E86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37A0B9682460DE8800CE3E86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +83,30 @@
 			path = extensions;
 			sourceTree = "<group>";
 		};
+		3796DF4C24857B0900BA6A51 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				37A0B96A2460DE8800CE3E86 /* coffee_timer.xcdatamodeld */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		3796DF4D24857C2B00BA6A51 /* brew-choices */ = {
+			isa = PBXGroup;
+			children = (
+				3796DF4E24857C5300BA6A51 /* BrewChoicesMenu.swift */,
+			);
+			path = "brew-choices";
+			sourceTree = "<group>";
+		};
+		3796DF5024857D4400BA6A51 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3796DF5124857D6300BA6A51 /* BrewMethodManager.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
 		37A0B95A2460DE8700CE3E86 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +126,8 @@
 		37A0B9652460DE8800CE3E86 /* coffee-timer */ = {
 			isa = PBXGroup;
 			children = (
+				3796DF5024857D4400BA6A51 /* controllers */,
+				3796DF4C24857B0900BA6A51 /* models */,
 				37BADDFB247C540000DFC8C3 /* helpers */,
 				378022122473087D00F9EAF5 /* extensions */,
 				37A0B97D2460DFCA00CE3E86 /* views */,
@@ -103,7 +137,6 @@
 				37A0B96F2460DE9000CE3E86 /* Assets.xcassets */,
 				37A0B9742460DE9000CE3E86 /* LaunchScreen.storyboard */,
 				37A0B9772460DE9000CE3E86 /* Info.plist */,
-				37A0B96A2460DE8800CE3E86 /* coffee_timer.xcdatamodeld */,
 				37A0B9712460DE9000CE3E86 /* Preview Content */,
 			);
 			path = "coffee-timer";
@@ -120,6 +153,7 @@
 		37A0B97D2460DFCA00CE3E86 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				3796DF4D24857C2B00BA6A51 /* brew-choices */,
 				37BADDF2247C43AB00DFC8C3 /* edit-view */,
 				37BADDF1247C433500DFC8C3 /* shared */,
 				37A0B97E2460DFD400CE3E86 /* calculation-view */,
@@ -155,6 +189,8 @@
 				37BADDF5247C460800DFC8C3 /* RatioEdit.swift */,
 				37BADDF7247C4B0600DFC8C3 /* BloomLength.swift */,
 				37BADDF9247C4EEE00DFC8C3 /* BloomAmount.swift */,
+				3796DF532485954A00BA6A51 /* CoffeeAmountEdit.swift */,
+				3796DF5524859A3400BA6A51 /* TitleEdit.swift */,
 			);
 			path = "edit-view";
 			sourceTree = "<group>";
@@ -241,6 +277,8 @@
 			files = (
 				37802214247308C100F9EAF5 /* Double+Extensions.swift in Sources */,
 				37A0B9822460E07A00CE3E86 /* TitleBlock.swift in Sources */,
+				3796DF5624859A3400BA6A51 /* TitleEdit.swift in Sources */,
+				3796DF5224857D6300BA6A51 /* BrewMethodManager.swift in Sources */,
 				37BADDFD247C541500DFC8C3 /* NavigationEnums.swift in Sources */,
 				37A0B9672460DE8800CE3E86 /* AppDelegate.swift in Sources */,
 				37A0B9802460E02700CE3E86 /* CalcMain.swift in Sources */,
@@ -248,7 +286,9 @@
 				37A0B9842460E2EC00CE3E86 /* CoffeeAmount.swift in Sources */,
 				37A0B96C2460DE8800CE3E86 /* coffee_timer.xcdatamodeld in Sources */,
 				37A0B98C2460E8F800CE3E86 /* Blooming.swift in Sources */,
+				3796DF4F24857C5300BA6A51 /* BrewChoicesMenu.swift in Sources */,
 				37A0B9882460E5A800CE3E86 /* TimerView.swift in Sources */,
+				3796DF542485954A00BA6A51 /* CoffeeAmountEdit.swift in Sources */,
 				37BADDFA247C4EEE00DFC8C3 /* BloomAmount.swift in Sources */,
 				37A0B96E2460DE8800CE3E86 /* ContentView.swift in Sources */,
 				370A7AA8246A1C6300BF713F /* CoffeeAdjust.swift in Sources */,
@@ -393,10 +433,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"coffee-timer/Preview Content\"";
 				DEVELOPMENT_TEAM = ZDK82FGR3Z;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "coffee-timer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -414,10 +456,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"coffee-timer/Preview Content\"";
 				DEVELOPMENT_TEAM = ZDK82FGR3Z;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "coffee-timer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

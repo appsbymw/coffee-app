@@ -11,21 +11,23 @@ import SwiftUI
 struct Blooming: View {
     @EnvironmentObject var settings: UserSettings
     
-    var coffeeAmount: Double
+    var coffeeGround: Double
+    var bloomRatio: Int
+    var bloomTime: Int
     
     var body: some View {
       VStack{
         HStack{
           Text("Water for Bloom")
           Spacer()
-            Text("\((coffeeAmount * Double(settings.bloomRatio)).toString(fractionDigits: 2)) g")
+            Text("\((coffeeGround * Double(bloomRatio)).toString(fractionDigits: 2)) g")
             .foregroundColor(.blue)
         }
         .padding(.vertical)
         HStack{
           Text("Time for Bloom")
           Spacer()
-            Text(settings.bloomTime)
+            Text(formatTime())
             .foregroundColor(.orange)
         }
         .padding(.vertical)
@@ -33,10 +35,18 @@ struct Blooming: View {
         self.settings.formatTime()
         }
     }
+    
+    func formatTime() -> String{
+        let tempMinutes = bloomTime / 60
+        let tempSeconds = bloomTime % 60
+        let minutes = String(format: "%02d", tempMinutes)
+        let seconds = String(format: "%02d", tempSeconds)
+        return minutes + ":" + seconds
+    }
 }
 
 struct Blooming_Previews: PreviewProvider {
     static var previews: some View {
-        Blooming(coffeeAmount: 60.0)
+        Blooming(coffeeGround: 60.0, bloomRatio: 2, bloomTime: 45)
     }
 }

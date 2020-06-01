@@ -16,7 +16,7 @@ struct CoffeeAmount: View {
     
     var body: some View {
         HStack{
-            Text("Coffee ground")
+            Text("Coffee Amount")
                 .foregroundColor(.primary)
             Spacer()
             Text("\(coffeeAmount.toString(fractionDigits: 2)) g")

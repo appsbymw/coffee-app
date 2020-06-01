@@ -11,14 +11,14 @@ import SwiftUI
 struct WaterAmount: View {
     @EnvironmentObject var settings: UserSettings
     
-    var coffeeAmount: Double
-    var ratio = 16.0 //User Defaults
+    var coffeeGround: Double
+    var ratio: Double
     
     var body: some View {
         HStack{
             Text("Water Amount")
             Spacer()
-            Text("\((coffeeAmount * Double(settings.coffeeAmount)).toString(fractionDigits: 2)) g")
+            Text("\((coffeeGround * ratio).toString(fractionDigits: 2)) g")
                 .foregroundColor(.blue)
         }
         .padding(.vertical)
@@ -27,6 +27,6 @@ struct WaterAmount: View {
 
 struct WaterAmount_Previews: PreviewProvider {
     static var previews: some View {
-        WaterAmount(coffeeAmount: 60.0)
+        WaterAmount(coffeeGround: 60.0, ratio: 16.0)
     }
 }

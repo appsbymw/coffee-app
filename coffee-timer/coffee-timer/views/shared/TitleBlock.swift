@@ -13,9 +13,11 @@ struct TitleBlock: View {
     @Binding var isSettingShown: Bool
     @Binding var chosenSetting: EditWindows
     
+    var title: String
+    
     var body: some View {
         HStack {
-            Text("Chemex")
+            Text(title)
                 .font(.largeTitle)
             Spacer()
             EditButton

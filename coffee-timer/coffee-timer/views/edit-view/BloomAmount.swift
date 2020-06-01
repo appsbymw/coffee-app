@@ -11,6 +11,8 @@ import SwiftUI
 struct BloomAmount: View {
     @EnvironmentObject var settings: UserSettings
     
+    @Binding var bloomRatio: Int
+    
     var body: some View {
         VStack(alignment: .leading){
             Text("Bloom water amount")
@@ -23,7 +25,7 @@ struct BloomAmount: View {
                     }, onDecrement: {
                         self.decrement()
                     }) {
-                        Text("\(settings.bloomRatio)x")
+                        Text("\(bloomRatio)x")
                             .font(.title) +
                             Text(" the coffee amount")
                     }
@@ -33,19 +35,19 @@ struct BloomAmount: View {
     }
     
     private func increment(){
-        settings.bloomRatio = settings.bloomRatio + 1
+        bloomRatio = bloomRatio + 1
     }
     private func decrement(){
-        if settings.bloomRatio > 2 {
-            settings.bloomRatio = settings.bloomRatio - 1
+        if bloomRatio > 2 {
+            bloomRatio = bloomRatio - 1
         } else {
-            settings.bloomRatio = 1
+            bloomRatio = 1
         }
     }
 }
-
-struct BloomAmount_Previews: PreviewProvider {
-    static var previews: some View {
-        BloomAmount()
-    }
-}
+//
+//struct BloomAmount_Previews: PreviewProvider {
+//    static var previews: some View {
+//        BloomAmount()
+//    }
+//}

@@ -10,6 +10,9 @@ import SwiftUI
 
 struct BloomLength: View {
     @EnvironmentObject var settings: UserSettings
+    @Binding var bloomLength: Int
+    
+    @State private var time: String = ""
     
     var body: some View {
         VStack(alignment: .leading){
@@ -20,27 +23,39 @@ struct BloomLength: View {
             }, onDecrement: {
                 self.decrement()
             }) {
-                Text(settings.bloomTime)
+                Text(time)
                     .font(.title)
             }
+        }.onAppear{
+            self.formatTime()
         }
     }
     
     private func increment(){
-        settings.bloomLength = settings.bloomLength + 1
+        bloomLength = bloomLength + 1
+        formatTime()
     }
     
     private func decrement(){
-        if settings.bloomLength > 2 {
-            settings.bloomLength = settings.bloomLength - 1
+        if bloomLength > 2 {
+            bloomLength = bloomLength - 1
         } else {
-            settings.bloomLength = 1
+            bloomLength = 1
         }
+        formatTime()
+    }
+    
+    func formatTime() {
+        let tempMinutes = bloomLength / 60
+        let tempSeconds = bloomLength % 60
+        let minutes = String(format: "%02d", tempMinutes)
+        let seconds = String(format: "%02d", tempSeconds)
+        time = minutes + ":" + seconds
     }
 }
 
-struct BloomLength_Previews: PreviewProvider {
-    static var previews: some View {
-        BloomLength()
-    }
-}
+//struct BloomLength_Previews: PreviewProvider {
+//    static var previews: some View {
+//        BloomLength()
+//    }
+//}

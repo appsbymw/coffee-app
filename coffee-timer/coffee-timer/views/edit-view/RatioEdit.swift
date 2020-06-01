@@ -9,9 +9,7 @@
 import SwiftUI
 
 struct RatioEdit: View {
-    @EnvironmentObject var settings: UserSettings
-    @State private var coffeeAmount = 16
-    @State private var waterAmount = 1
+    @Binding var waterAmount: Int
     
     let coffeeColor = Color.init(UIColor(named: "coffee")!)
     var body: some View {
@@ -25,49 +23,34 @@ struct RatioEdit: View {
             }.font(.subheadline)
             HStack{
                 Spacer()
-                VStack{
-                    Text("\(settings.coffeeAmount) g")
-                        .font(.title)
-                        .foregroundColor(coffeeColor)
-                    Stepper(onIncrement: {
-                        self.settings.coffeeAmount = self.settings.coffeeAmount + 1
-                    }, onDecrement: {
-                        self.decrementCoffee()
-                    }) {
-                        Text("grams of coffee")
-                    }
-                }
-                Text("to").padding(.all)
-                VStack{
-                    Text("\(settings.waterAmount) g")
+                Text("1g")
+                    .foregroundColor(coffeeColor)
+                    + Text(" to ")
+                    + Text("\(waterAmount)g")
                         .font(.title)
                         .foregroundColor(.blue)
+                Stepper(onIncrement: {
+                    self.waterAmount = self.waterAmount + 1
+                }, onDecrement: {
+                    self.decrementWater()
+                }) {
+                    Text("grams of coffee")
                 }
-                Spacer()
             }
-            .padding(.all)
         }.labelsHidden()
     }
     
     private func decrementWater(){
-        if settings.waterAmount > 2 {
-            settings.waterAmount = settings.waterAmount - 1
+        if waterAmount > 2 {
+            waterAmount = waterAmount - 1
         } else {
-            settings.waterAmount = 1
-        }
-    }
-    
-    private func decrementCoffee(){
-        if settings.coffeeAmount > 2 {
-            settings.coffeeAmount = settings.coffeeAmount - 1
-        } else {
-            settings.coffeeAmount = 1
+            waterAmount = 1
         }
     }
 }
 
-struct RatioEdit_Previews: PreviewProvider {
-    static var previews: some View {
-        RatioEdit().environmentObject(UserSettings())
-    }
-}
+//struct RatioEdit_Previews: PreviewProvider {
+//    static var previews: some View {
+//        RatioEdit(waterAmount: <#Binding<Int>#>).environmentObject(UserSettings())
+//    }
+//}

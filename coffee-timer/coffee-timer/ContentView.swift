@@ -9,9 +9,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.managedObjectContext) var moc
     @EnvironmentObject var settings: UserSettings
+    
     var body: some View {
-        CalcMain()
+        BrewChoicesMenu()
     }
 }
 
