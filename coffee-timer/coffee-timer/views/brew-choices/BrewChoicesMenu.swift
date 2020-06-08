@@ -15,6 +15,8 @@ struct BrewChoicesMenu: View {
     
     @FetchRequest(entity: BrewMethod.entity(), sortDescriptors: []) var brewMethods: FetchedResults<BrewMethod>
     
+    @State private var editIsPresented = false
+    
     let brewMethodManager = BrewMethodManager()
     let coffeeColor = Color(UIColor(named: "coffee")!)
     
@@ -41,12 +43,21 @@ struct BrewChoicesMenu: View {
                         .stroke(lineWidth: 2))
                         .foregroundColor(.gray)
                         .contextMenu {
+                            Button(action: {
+                                self.editIsPresented = true
+                            }) {
+                                Image(systemName: "pencil")
+                                Text("Edit")
+                            }
                             Button(action:{
                                 self.deleteBrewMethod(brewMethod)
                             }){
                                 Image(systemName: "trash")
                                 Text("Delete \(brewMethod.title ?? "UNKNOWN")")
-                            }
+                            }.foregroundColor(.red)
+                        }
+                        .sheet(isPresented: self.$editIsPresented){
+                            MainEdit(brewMethod: brewMethod).environment(\.managedObjectContext, self.moc)
                         }
                     }
                     .padding()
