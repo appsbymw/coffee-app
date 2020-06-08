@@ -19,6 +19,7 @@ struct TimerView: View {
     var body: some View {
         VStack {
             Text("\(time[0]):\(time[1])")
+                .frame(minWidth: 0, maxWidth: .infinity)
                 .font(.title)
                 .padding(.bottom, 50)
             if timerIsGoing {
@@ -34,6 +35,8 @@ struct TimerView: View {
     private var StartButton: some View {
         Button(action:{
             print("Toggle timer")
+            self.time[1] = String(format: "%02d", self.seconds)
+            self.time[0] = String(format: "%02d", self.minutes)
             withAnimation{
                 self.startTimer()
             }
@@ -65,6 +68,7 @@ struct TimerView: View {
     }
     
     func startTimer(){
+        
         timerIsGoing = true
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true){ tempTime in
             if self.seconds >= 59{
