@@ -20,7 +20,7 @@ struct TimerView: View {
         VStack {
             Text("\(time[0]):\(time[1])")
                 .frame(minWidth: 0, maxWidth: .infinity)
-                .font(.title)
+                .font(.system(size: 50))
                 .padding(.bottom, 50)
             if timerIsGoing {
                 StopButton
@@ -28,7 +28,7 @@ struct TimerView: View {
                 StartButton
             }
             Spacer()
-        }
+        }.font(.system(size: 50))
     }
     
     // MARK: Button for start
