@@ -21,6 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     // Get the managed object context from the shared persistent container.
     let moc = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    moc.automaticallyMergesChangesFromParent = true
     
     let settings = UserSettings()
 
@@ -29,6 +30,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     let contentView = ContentView()
         .environment(\.managedObjectContext, moc)
         .environmentObject(settings)
+    
 
     // Use a UIHostingController as window root view controller.
     if let windowScene = scene as? UIWindowScene {

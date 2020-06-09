@@ -10,6 +10,7 @@
 		370A7AA8246A1C6300BF713F /* CoffeeAdjust.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370A7AA7246A1C6300BF713F /* CoffeeAdjust.swift */; };
 		374474A8247C5AF3009D18F7 /* UserDefaults+PropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374474A7247C5AF3009D18F7 /* UserDefaults+PropertyWrapper.swift */; };
 		37802214247308C100F9EAF5 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37802213247308C100F9EAF5 /* Double+Extensions.swift */; };
+		3780FB7C248EC1990045515D /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3780FB7B248EC1990045515D /* CloudKit.framework */; };
 		3796DF4F24857C5300BA6A51 /* BrewChoicesMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3796DF4E24857C5300BA6A51 /* BrewChoicesMenu.swift */; };
 		3796DF5224857D6300BA6A51 /* BrewMethodManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3796DF5124857D6300BA6A51 /* BrewMethodManager.swift */; };
 		3796DF542485954A00BA6A51 /* CoffeeAmountEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3796DF532485954A00BA6A51 /* CoffeeAmountEdit.swift */; };
@@ -38,6 +39,8 @@
 		370A7AA7246A1C6300BF713F /* CoffeeAdjust.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeAdjust.swift; sourceTree = "<group>"; };
 		374474A7247C5AF3009D18F7 /* UserDefaults+PropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+PropertyWrapper.swift"; sourceTree = "<group>"; };
 		37802213247308C100F9EAF5 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		3780FB79248EC1970045515D /* Coffee Budy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Coffee Budy.entitlements"; sourceTree = "<group>"; };
+		3780FB7B248EC1990045515D /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		3796DF4E24857C5300BA6A51 /* BrewChoicesMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewChoicesMenu.swift; sourceTree = "<group>"; };
 		3796DF5124857D6300BA6A51 /* BrewMethodManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewMethodManager.swift; sourceTree = "<group>"; };
 		3796DF532485954A00BA6A51 /* CoffeeAmountEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeAmountEdit.swift; sourceTree = "<group>"; };
@@ -69,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3780FB7C248EC1990045515D /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +85,14 @@
 				37802213247308C100F9EAF5 /* Double+Extensions.swift */,
 			);
 			path = extensions;
+			sourceTree = "<group>";
+		};
+		3780FB7A248EC1990045515D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3780FB7B248EC1990045515D /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		3796DF4C24857B0900BA6A51 /* models */ = {
@@ -112,6 +124,7 @@
 			children = (
 				37A0B9652460DE8800CE3E86 /* coffee-timer */,
 				37A0B9642460DE8800CE3E86 /* Products */,
+				3780FB7A248EC1990045515D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +139,7 @@
 		37A0B9652460DE8800CE3E86 /* coffee-timer */ = {
 			isa = PBXGroup;
 			children = (
+				3780FB79248EC1970045515D /* Coffee Budy.entitlements */,
 				3796DF5024857D4400BA6A51 /* controllers */,
 				3796DF4C24857B0900BA6A51 /* models */,
 				37BADDFB247C540000DFC8C3 /* helpers */,
@@ -432,6 +446,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "coffee-timer/Coffee Budy.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"coffee-timer/Preview Content\"";
@@ -455,6 +470,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "coffee-timer/Coffee Budy.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"coffee-timer/Preview Content\"";
