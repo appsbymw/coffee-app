@@ -17,7 +17,7 @@
 		3796DF5624859A3400BA6A51 /* TitleEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3796DF5524859A3400BA6A51 /* TitleEdit.swift */; };
 		37A0B9672460DE8800CE3E86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0B9662460DE8800CE3E86 /* AppDelegate.swift */; };
 		37A0B9692460DE8800CE3E86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0B9682460DE8800CE3E86 /* SceneDelegate.swift */; };
-		37A0B96C2460DE8800CE3E86 /* coffee_timer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37A0B96A2460DE8800CE3E86 /* coffee_timer.xcdatamodeld */; };
+		37A0B96C2460DE8800CE3E86 /* coffeeBuddy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37A0B96A2460DE8800CE3E86 /* coffeeBuddy.xcdatamodeld */; };
 		37A0B96E2460DE8800CE3E86 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0B96D2460DE8800CE3E86 /* ContentView.swift */; };
 		37A0B9702460DE9000CE3E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37A0B96F2460DE9000CE3E86 /* Assets.xcassets */; };
 		37A0B9732460DE9000CE3E86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37A0B9722460DE9000CE3E86 /* Preview Assets.xcassets */; };
@@ -98,7 +98,7 @@
 		3796DF4C24857B0900BA6A51 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				37A0B96A2460DE8800CE3E86 /* coffee_timer.xcdatamodeld */,
+				37A0B96A2460DE8800CE3E86 /* coffeeBuddy.xcdatamodeld */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -298,7 +298,7 @@
 				37A0B9802460E02700CE3E86 /* CalcMain.swift in Sources */,
 				37A0B9862460E4F300CE3E86 /* WaterAmount.swift in Sources */,
 				37A0B9842460E2EC00CE3E86 /* CoffeeAmount.swift in Sources */,
-				37A0B96C2460DE8800CE3E86 /* coffee_timer.xcdatamodeld in Sources */,
+				37A0B96C2460DE8800CE3E86 /* coffeeBuddy.xcdatamodeld in Sources */,
 				37A0B98C2460E8F800CE3E86 /* Blooming.swift in Sources */,
 				3796DF4F24857C5300BA6A51 /* BrewChoicesMenu.swift in Sources */,
 				37A0B9882460E5A800CE3E86 /* TimerView.swift in Sources */,
@@ -448,7 +448,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "coffee-timer/Coffee Budy.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"coffee-timer/Preview Content\"";
 				DEVELOPMENT_TEAM = ZDK82FGR3Z;
 				ENABLE_PREVIEWS = YES;
@@ -472,7 +472,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "coffee-timer/Coffee Budy.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"coffee-timer/Preview Content\"";
 				DEVELOPMENT_TEAM = ZDK82FGR3Z;
 				ENABLE_PREVIEWS = YES;
@@ -514,13 +514,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		37A0B96A2460DE8800CE3E86 /* coffee_timer.xcdatamodeld */ = {
+		37A0B96A2460DE8800CE3E86 /* coffeeBuddy.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				37A0B96B2460DE8800CE3E86 /* coffee_timer.xcdatamodel */,
 			);
 			currentVersion = 37A0B96B2460DE8800CE3E86 /* coffee_timer.xcdatamodel */;
-			path = coffee_timer.xcdatamodeld;
+			path = coffeeBuddy.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
