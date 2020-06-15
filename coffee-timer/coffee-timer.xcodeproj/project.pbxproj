@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		370A7AA8246A1C6300BF713F /* CoffeeAdjust.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370A7AA7246A1C6300BF713F /* CoffeeAdjust.swift */; };
 		374474A8247C5AF3009D18F7 /* UserDefaults+PropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374474A7247C5AF3009D18F7 /* UserDefaults+PropertyWrapper.swift */; };
+		3762A7D22497F51F00B96EA4 /* BrewNoteSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3762A7D12497F51F00B96EA4 /* BrewNoteSection.swift */; };
+		3762A7D42497F77800B96EA4 /* NoteEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3762A7D32497F77800B96EA4 /* NoteEdit.swift */; };
+		3762A7D62497FA5800B96EA4 /* NotesAdjust.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3762A7D52497FA5800B96EA4 /* NotesAdjust.swift */; };
 		37802214247308C100F9EAF5 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37802213247308C100F9EAF5 /* Double+Extensions.swift */; };
 		3780FB7C248EC1990045515D /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3780FB7B248EC1990045515D /* CloudKit.framework */; };
 		3796DF4F24857C5300BA6A51 /* BrewChoicesMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3796DF4E24857C5300BA6A51 /* BrewChoicesMenu.swift */; };
@@ -38,6 +41,9 @@
 /* Begin PBXFileReference section */
 		370A7AA7246A1C6300BF713F /* CoffeeAdjust.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeAdjust.swift; sourceTree = "<group>"; };
 		374474A7247C5AF3009D18F7 /* UserDefaults+PropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+PropertyWrapper.swift"; sourceTree = "<group>"; };
+		3762A7D12497F51F00B96EA4 /* BrewNoteSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewNoteSection.swift; sourceTree = "<group>"; };
+		3762A7D32497F77800B96EA4 /* NoteEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEdit.swift; sourceTree = "<group>"; };
+		3762A7D52497FA5800B96EA4 /* NotesAdjust.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesAdjust.swift; sourceTree = "<group>"; };
 		37802213247308C100F9EAF5 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		3780FB79248EC1970045515D /* Coffee Budy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Coffee Budy.entitlements"; sourceTree = "<group>"; };
 		3780FB7B248EC1990045515D /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
@@ -184,6 +190,8 @@
 				37A0B9872460E5A800CE3E86 /* TimerView.swift */,
 				37A0B98B2460E8F800CE3E86 /* Blooming.swift */,
 				370A7AA7246A1C6300BF713F /* CoffeeAdjust.swift */,
+				3762A7D12497F51F00B96EA4 /* BrewNoteSection.swift */,
+				3762A7D52497FA5800B96EA4 /* NotesAdjust.swift */,
 			);
 			path = "calculation-view";
 			sourceTree = "<group>";
@@ -205,6 +213,7 @@
 				37BADDF9247C4EEE00DFC8C3 /* BloomAmount.swift */,
 				3796DF532485954A00BA6A51 /* CoffeeAmountEdit.swift */,
 				3796DF5524859A3400BA6A51 /* TitleEdit.swift */,
+				3762A7D32497F77800B96EA4 /* NoteEdit.swift */,
 			);
 			path = "edit-view";
 			sourceTree = "<group>";
@@ -298,17 +307,20 @@
 				37A0B9802460E02700CE3E86 /* CalcMain.swift in Sources */,
 				37A0B9862460E4F300CE3E86 /* WaterAmount.swift in Sources */,
 				37A0B9842460E2EC00CE3E86 /* CoffeeAmount.swift in Sources */,
+				3762A7D22497F51F00B96EA4 /* BrewNoteSection.swift in Sources */,
 				37A0B96C2460DE8800CE3E86 /* coffeeBuddy.xcdatamodeld in Sources */,
 				37A0B98C2460E8F800CE3E86 /* Blooming.swift in Sources */,
 				3796DF4F24857C5300BA6A51 /* BrewChoicesMenu.swift in Sources */,
 				37A0B9882460E5A800CE3E86 /* TimerView.swift in Sources */,
 				3796DF542485954A00BA6A51 /* CoffeeAmountEdit.swift in Sources */,
 				37BADDFA247C4EEE00DFC8C3 /* BloomAmount.swift in Sources */,
+				3762A7D62497FA5800B96EA4 /* NotesAdjust.swift in Sources */,
 				37A0B96E2460DE8800CE3E86 /* ContentView.swift in Sources */,
 				370A7AA8246A1C6300BF713F /* CoffeeAdjust.swift in Sources */,
 				37BADDF6247C460800DFC8C3 /* RatioEdit.swift in Sources */,
 				37A0B9692460DE8800CE3E86 /* SceneDelegate.swift in Sources */,
 				37BADDF4247C43C500DFC8C3 /* MainEdit.swift in Sources */,
+				3762A7D42497F77800B96EA4 /* NoteEdit.swift in Sources */,
 				37BADDF8247C4B0600DFC8C3 /* BloomLength.swift in Sources */,
 				374474A8247C5AF3009D18F7 /* UserDefaults+PropertyWrapper.swift in Sources */,
 			);

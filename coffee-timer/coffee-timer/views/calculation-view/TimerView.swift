@@ -10,18 +10,29 @@ import SwiftUI
 
 struct TimerView: View {
     
+    var bloomTime: Int = 45
+    
     @State private var time = ["00","00"] // [MINUTES, SECONDS]
     @State private var minutes = 0
     @State private var seconds = 0
+    @State private var totalSeconds = 0
     @State private var timerIsGoing = false
     @State private var timer: Timer? = nil
     
     var body: some View {
         VStack {
-            Text("\(time[0]):\(time[1])")
-                .frame(minWidth: 0, maxWidth: .infinity)
-                .font(.system(size: 50))
-                .padding(.bottom, 50)
+            if totalSeconds >= bloomTime {
+                Text("\(time[0]):\(time[1])")
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .font(.system(size: 50, design: .monospaced))
+                    .padding(.bottom, 50)
+                    .foregroundColor(.orange)
+            } else {
+                Text("\(time[0]):\(time[1])")
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .font(.system(size: 50, design: .monospaced))
+                    .padding(.bottom, 50)
+            }
             if timerIsGoing {
                 StopButton
             } else {
@@ -78,6 +89,7 @@ struct TimerView: View {
             } else {
                 self.seconds = self.seconds + 1
             }
+            self.totalSeconds = self.totalSeconds + 1
             self.time[1] = String(format: "%02d", self.seconds)
         }
     }
@@ -88,6 +100,7 @@ struct TimerView: View {
         timer = nil
         self.minutes = 0
         self.seconds = 0
+        self.totalSeconds = 0
     }
 }
 

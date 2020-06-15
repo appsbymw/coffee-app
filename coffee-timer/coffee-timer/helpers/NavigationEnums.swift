@@ -11,4 +11,5 @@ import Foundation
 enum EditWindows {
     case coffeeAmount
     case brewSettings
+    case brewNotes
 }

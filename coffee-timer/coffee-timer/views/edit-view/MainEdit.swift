@@ -16,6 +16,7 @@ struct MainEdit: View {
     @State var bloomRatio: Int = 2
     @State var coffeeGround: String = "60.0"
     @State var waterRatio: Int = 16
+    @State var brewNotes: String = ""
     
     let bmm = BrewMethodManager()
     var brewMethod: BrewMethod
@@ -35,11 +36,13 @@ struct MainEdit: View {
             RatioEdit(waterAmount: $waterRatio)
             CoffeeAmountEdit(coffeeGround: $coffeeGround)
             Divider()
-            BloomAmount(bloomRatio: $bloomRatio)
-            BloomLength(bloomLength: $bloomLength)
+            Group{
+                BloomAmount(bloomRatio: $bloomRatio)
+                BloomLength(bloomLength: $bloomLength)
+            }
             Divider()
+            NoteEdit(brewNotes: $brewNotes)
             Spacer()
-            
             HStack{
                 Spacer()
                 Button(action: {
@@ -71,6 +74,7 @@ struct MainEdit: View {
         brewMethod.bloomRatio = Int64(bloomRatio)
         brewMethod.coffeeGround = Double(coffeeGround) ?? 0.0
         brewMethod.waterRatio = Int64(waterRatio)
+        brewMethod.notes = brewNotes
         bmm.updateBrewMethod(context: moc, updatedBrew: brewMethod)
         presentationMode.wrappedValue.dismiss()
     }

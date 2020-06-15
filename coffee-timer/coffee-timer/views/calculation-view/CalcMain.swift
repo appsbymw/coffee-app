@@ -45,7 +45,14 @@ struct CalcMain: View {
                      bloomRatio: Int(brewMethod.bloomRatio),
                      bloomTime: Int(brewMethod.bloomLength))
             Divider()
-            TimerView()
+            Button(action: {
+                self.isSettingsShown = true
+                self.chosenSetting = .brewNotes
+            }){
+                BrewNoteSection(brewNotes: brewMethod.notes)
+            }
+            Divider()
+            TimerView(bloomTime: Int(brewMethod.bloomLength))
                 .padding(.top)
         }
         .padding(.horizontal)
@@ -54,6 +61,9 @@ struct CalcMain: View {
         .sheet(isPresented: $isSettingsShown) {
             if self.chosenSetting == .coffeeAmount {
                 CoffeeAdjust(brewMethod: self.brewMethod, newAmount: "\(self.brewMethod.coffeeGround)")
+                    .environment(\.managedObjectContext, self.moc)
+            }else if self.chosenSetting == .brewNotes{
+                NotesAdjust(brewMethod: self.brewMethod)
                     .environment(\.managedObjectContext, self.moc)
             } else {
                 MainEdit(brewMethod: self.brewMethod)
