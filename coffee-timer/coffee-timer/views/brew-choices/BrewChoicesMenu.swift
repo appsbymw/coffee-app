@@ -13,7 +13,7 @@ struct BrewChoicesMenu: View {
     @Environment(\.managedObjectContext) var moc
     @EnvironmentObject var settings: UserSettings
     
-    @FetchRequest(entity: BrewMethod.entity(), sortDescriptors: []) var brewMethods: FetchedResults<BrewMethod>
+    @FetchRequest(entity: BrewMethod.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \BrewMethod.title, ascending: true)]) var brewMethods: FetchedResults<BrewMethod>
     
     @State private var editIsPresented = false
     
@@ -22,7 +22,7 @@ struct BrewChoicesMenu: View {
     
     var body: some View {
         NavigationView{
-            ScrollView{
+            ScrollView(.vertical, showsIndicators: false){
                 ForEach(brewMethods, id: \.id) { brewMethod in
                     NavigationLink(destination: CalcMain(brewMethod: brewMethod).environmentObject(self.settings)){
                         VStack{

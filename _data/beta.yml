@@ -1,0 +1,12 @@
+- version: 0.1.0
+  build: 3
+  summary: "Added: CloudKit to sync data in iCloud, larger timer button, and brew notes!"
+  isCandidate: ❌ No
+- version: 0.1.0
+  build: 2
+  summary: "Added: The ability to add brew methods & Change the title of brew methods fixed 2 issues relating to calculations and how the ratio is presented."
+  isCandidate: ❌ No
+- version: 0.1.0
+  build: 1
+  summary: "Everything! This is the first beta build. You can tap on Coffee Ground to change the amount and Edit to change other parts of the app. Report issues on GitHub or through testflight"
+  isCandidate: "❌ No"

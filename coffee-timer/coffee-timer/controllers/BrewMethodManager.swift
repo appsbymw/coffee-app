@@ -46,6 +46,25 @@ struct BrewMethodManager {
         }
     }
     
+    func udateTimerOptions(context: NSManagedObjectContext, updatedBrew: BrewMethod){
+        let brewID = updatedBrew.id! as NSUUID
+        
+        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "BrewMethod")
+        fetchRequest.predicate = NSPredicate(format: "id == %@", brewID as CVarArg)
+        fetchRequest.fetchLimit = 1
+        
+        do {
+            let test = try context.fetch(fetchRequest)
+            let brewUpdate = test [0] as! NSManagedObject
+            brewUpdate.setValue(updatedBrew.timerLastUpdated, forKey: "timerLastUpdated")
+            brewUpdate.setValue(updatedBrew.secondsUsed, forKey: "secondsUsed")
+            brewUpdate.setValue(updatedBrew.isTimerGoing, forKey: "isTimerGoing")
+            try context.save()
+        } catch {
+            print(error)
+        }
+    }
+    
     func deleteBrewMethod(context: NSManagedObjectContext, brewMethod: BrewMethod){
         context.delete(brewMethod)
         do {

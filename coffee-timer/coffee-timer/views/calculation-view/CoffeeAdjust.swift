@@ -31,7 +31,7 @@ struct CoffeeAdjust: View {
                 }
             }
             .padding(.top)
-            Spacer()
+            .padding(.bottom, 10)
             CoffeeAmountEdit(coffeeGround: $newAmount)
             HStack{
                 Spacer()

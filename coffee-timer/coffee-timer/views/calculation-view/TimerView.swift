@@ -9,6 +9,10 @@
 import SwiftUI
 
 struct TimerView: View {
+    @Environment(\.managedObjectContext) var moc
+    let bmm = BrewMethodManager()
+    
+    var brewMethod: BrewMethod
     
     var bloomTime: Int = 45
     
@@ -39,13 +43,22 @@ struct TimerView: View {
                 StartButton
             }
             Spacer()
-        }.font(.system(size: 50))
+        }
+        .font(.system(size: 50))
+        .onAppear{
+            self.setValues()
+        }
+        .onDisappear{
+            self.brewMethod.isTimerGoing = self.timerIsGoing
+            self.brewMethod.secondsUsed = Int64(self.totalSeconds)
+            self.brewMethod.timerLastUpdated = Date()
+            self.bmm.udateTimerOptions(context: self.moc, updatedBrew: self.brewMethod)
+        }
     }
     
     // MARK: Button for start
     private var StartButton: some View {
         Button(action:{
-            print("Toggle timer")
             self.time[1] = String(format: "%02d", self.seconds)
             self.time[0] = String(format: "%02d", self.minutes)
             withAnimation{
@@ -64,7 +77,6 @@ struct TimerView: View {
     // MARK: Button for stop
     private var StopButton: some View {
         Button(action:{
-            print("Toggle timer")
             withAnimation{
                 self.stopTimer()
             }
@@ -81,6 +93,7 @@ struct TimerView: View {
     func startTimer(){
         
         timerIsGoing = true
+        brewMethod.isTimerGoing = timerIsGoing
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true){ tempTime in
             if self.seconds >= 59{
                 self.seconds = 0
@@ -91,6 +104,9 @@ struct TimerView: View {
             }
             self.totalSeconds = self.totalSeconds + 1
             self.time[1] = String(format: "%02d", self.seconds)
+            self.brewMethod.secondsUsed = Int64(self.totalSeconds)
+            self.brewMethod.timerLastUpdated = Date()
+            self.bmm.udateTimerOptions(context: self.moc, updatedBrew: self.brewMethod)
         }
     }
     
@@ -101,11 +117,36 @@ struct TimerView: View {
         self.minutes = 0
         self.seconds = 0
         self.totalSeconds = 0
+        brewMethod.timerLastUpdated = Date()
+        brewMethod.secondsUsed = 0
+        brewMethod.isTimerGoing = false
+        bmm.udateTimerOptions(context: self.moc, updatedBrew: self.brewMethod)
+    }
+    
+    func setValues(){
+        timerIsGoing = brewMethod.isTimerGoing
+        
+        if timerIsGoing == false {
+            totalSeconds = 0
+        } else {
+            totalSeconds = Int(brewMethod.secondsUsed)
+        }
+        
+        // format time
+        minutes = totalSeconds / 60
+        seconds = totalSeconds % 60
+        
+        time[0] = String(format: "%02d", self.minutes)
+        time[1] = String(format: "%02d", self.seconds)
+        
+        if timerIsGoing == true {
+            startTimer()
+        }
     }
 }
 
 struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
-        TimerView()
+        TimerView(brewMethod: BrewMethod())
     }
 }

@@ -21,6 +21,7 @@ struct CalcMain: View {
     
     var body: some View {
         VStack {
+            //MARK: Coffee:Water ratio
             HStack{
                 VStack{
                     Text("1g")
@@ -33,26 +34,32 @@ struct CalcMain: View {
                         Text("water")
                 }.foregroundColor(.blue)
             }
-            Button(action:{
-                self.isSettingsShown = true
-                self.chosenSetting = .coffeeAmount
-            }){
-                CoffeeAmount(coffeeAmount: brewMethod.coffeeGround)
+            ScrollView{
+                // MARK: Coffee amount
+                Button(action:{
+                    self.isSettingsShown = true
+                    self.chosenSetting = .coffeeAmount
+                }){
+                    CoffeeAmount(coffeeAmount: brewMethod.coffeeGround)
+                }
+                // MARK: Water
+                WaterAmount(coffeeGround: brewMethod.coffeeGround, ratio: Double(brewMethod.waterRatio))
+                Divider()
+                Blooming(coffeeGround: brewMethod.coffeeGround,
+                         bloomRatio: Int(brewMethod.bloomRatio),
+                         bloomTime: Int(brewMethod.bloomLength))
+                Divider()
+                // MARK: Brew Notes
+                Button(action: {
+                    self.isSettingsShown = true
+                    self.chosenSetting = .brewNotes
+                }){
+                    BrewNoteSection(brewNotes: brewMethod.notes)
+                }
+                Divider()
             }
-            WaterAmount(coffeeGround: brewMethod.coffeeGround, ratio: Double(brewMethod.waterRatio))
-            Divider()
-            Blooming(coffeeGround: brewMethod.coffeeGround,
-                     bloomRatio: Int(brewMethod.bloomRatio),
-                     bloomTime: Int(brewMethod.bloomLength))
-            Divider()
-            Button(action: {
-                self.isSettingsShown = true
-                self.chosenSetting = .brewNotes
-            }){
-                BrewNoteSection(brewNotes: brewMethod.notes)
-            }
-            Divider()
-            TimerView(bloomTime: Int(brewMethod.bloomLength))
+            // MARK: Timer
+            TimerView(brewMethod: brewMethod, bloomTime: Int(brewMethod.bloomLength))
                 .padding(.top)
         }
         .padding(.horizontal)
@@ -81,7 +88,7 @@ struct CalcMain: View {
             }){
                 Text("Edit")
                     .foregroundColor(.red)
-            }.padding(.bottom)
+            }
         }
     }
 }

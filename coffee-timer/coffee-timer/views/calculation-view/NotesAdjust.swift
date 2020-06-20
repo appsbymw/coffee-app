@@ -26,8 +26,7 @@ struct NotesAdjust: View {
                     Text("Cancel")
                         .foregroundColor(.red)
                 }
-            }
-            Spacer()
+            }.padding(.bottom, 10)
             NoteEdit(brewNotes: $newNote)
             HStack{
                 Spacer()
